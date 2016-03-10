@@ -1,0 +1,123 @@
+
+$violet: #322955;
+$roboto: "Roboto slab", serif; 
+
+html {
+	font-size: 62.5%;
+}
+body {
+	background-color: $violet;
+}
+nav {
+	height: 40px;
+	width: 100%;
+	background: $violet;
+	font-size: 1.3rem;
+	font-family: $roboto;
+	font-weight: bold;
+	position: relative;
+	ul {
+		padding: 0;
+		margin: 0 auto;
+		width: 600px;
+		height: 40px;
+		}
+	ul li a {
+		color: white;
+	}
+	li:last-child a {
+	border-right: 0;
+	}
+	li {
+		display: inline;
+		float: left;
+		margin-right: 27px;
+	}
+	a {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		text-decoration: none;
+		line-height: 40px;
+		&:hover, &:active {
+			text-decoration: underline;
+		}
+	}
+a#pull {
+	display:none;
+}
+}
+.clearfix {
+	*zoom: 1;
+	&:before, &:after {
+		content: " ";
+		display: table;
+	}
+after {
+	clear: both;
+}
+}
+@media screen and (max-width: 600px) {
+	nav {
+		height: auto;
+	}
+		ul {
+			width: 100%;
+			display: block;
+			height: auto;
+		}
+		li {
+			width: 50%;
+			float: left;
+			position: relative;
+			a {
+				border-bottom: 1px solid #576979;
+				border-right: 1px solid #576979;
+			}
+		}
+	a {
+		text-align: left;
+		width: 100%;
+		text-indent: 25px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	nav {
+		border-bottom: 0;
+	
+		ul {
+			display: none;
+			height: auto;
+			}
+		a#pull {
+			display: block;
+			background-color: #283744;
+			width: 100%;
+			position: relative;
+		&:after {
+			content: "";
+		
+			background: url(data:image/png;base64,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) no-repeat;
+
+			width: 30px;
+			height: 30px;
+			display: inline-block;
+			position: absolute;
+			right: 15px;
+			top: 10px;
+		}
+	}
+}
+}
+@media only screen and (max-width: 320px) {
+	nav li {
+		display: block;
+		float: none;
+		width: 100%;
+			a {
+			border-bottom: 1px solid black;
+			color: white;
+				}
+				}
+
+}
