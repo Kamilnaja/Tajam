@@ -52,11 +52,11 @@ table {
   border-spacing: 0;
 }
 
-/* line 7, ../sass/screen.scss */
+/* line 9, ../sass/screen.scss */
 .box-shadow-menu {
   position: relative;
 }
-/* line 9, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 .box-shadow-menu:before {
   content: "";
   position: absolute;
@@ -68,7 +68,7 @@ table {
   box-shadow: 0 0.6em 0 0 white, 0 1.2em 0 0 white;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 html {
   font-size: 62.5%;
 }
@@ -80,19 +80,20 @@ body {
 /* line 30, ../sass/screen.scss */
 body a {
   font-size: 1.5rem;
-  font-family: "Roboto slab", serif;
+  font-family: "Roboto", sans-serif;
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
 }
-/* line 35, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 body a:hover {
   text-decoration: underline;
 }
-/* line 39, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 body img {
   width: 100%;
 }
-/* line 44, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 body header {
   width: 100%;
   height: 76px;
@@ -101,56 +102,54 @@ body header {
   left: 0;
   border-bottom: 4px solid red;
   z-index: 100;
+  background-color: #322955;
 }
 
 /* line 54, ../sass/screen.scss */
 #logo {
-  background-color: white;
-  margin: 20px;
+  margin: 16px;
   float: left;
-  width: 100px;
   height: 40px;
   display: block;
-  color: #322955;
-  line-height: 40px;
   padding-left: 20px;
+  background-image: url("img/logo.png");
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 nav {
   float: right;
   padding: 20px;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 #menu-icon {
   display: none;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 a:hover#menu-icon {
   background-color: #444;
   border-radius: 4px 4px 0 0;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 ul {
   list-style: none;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 li {
   display: inline-block;
   float: left;
   padding: 10px;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .current {
   color: #2262AD;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 section {
   margin: 80px auto 40px;
   max-width: 980px;
@@ -159,12 +158,12 @@ section {
 }
 
 @media only screen and (max-width: 740px) {
-  /* line 100, ../sass/screen.scss */
+  /* line 94, ../sass/screen.scss */
   header {
     position: absolute;
   }
 
-  /* line 103, ../sass/screen.scss */
+  /* line 97, ../sass/screen.scss */
   #menu-icon {
     display: inline-block;
     bottom: 20px;
@@ -174,7 +173,7 @@ section {
     position: absolute;
   }
 
-  /* line 111, ../sass/screen.scss */
+  /* line 105, ../sass/screen.scss */
   nav ul, nav:active ul {
     display: none;
     position: absolute;
@@ -185,13 +184,13 @@ section {
     background-color: #322955;
   }
 
-  /* line 120, ../sass/screen.scss */
+  /* line 114, ../sass/screen.scss */
   nav ul a {
     color: white;
   }
 
   /* ustawienie listy */
-  /* line 124, ../sass/screen.scss */
+  /* line 118, ../sass/screen.scss */
   nav li {
     text-align: center;
     width: 100%;
@@ -204,7 +203,115 @@ section {
   	} */
 }
 /* koniec nav */
-/* line 136, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .open {
   display: block;
+}
+
+/* line 133, ../sass/screen.scss */
+.intro {
+  color: white;
+  background: url("../img/bg-1.jpg") no-repeat;
+  text-align: center;
+}
+/* line 138, ../sass/screen.scss */
+.intro h2 {
+  font-size: 3.2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Playfair Display", serif;
+  line-height: 3.9rem;
+  display: inline-block;
+  margin-top: 120px;
+}
+/* line 147, ../sass/screen.scss */
+.intro p {
+  margin-top: 61px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+}
+/* line 153, ../sass/screen.scss */
+.intro button {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 225px;
+}
+
+/* line 160, ../sass/screen.scss */
+hr {
+  width: 30%;
+  color: #00e0d0;
+}
+
+/* line 164, ../sass/screen.scss */
+.aligner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 169, ../sass/screen.scss */
+.aligner-item {
+  max-width: 85%;
+}
+
+/* line 172, ../sass/screen.scss */
+.ourstory {
+  background-color: white;
+  padding: 20px;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 177, ../sass/screen.scss */
+.ourstory h2 {
+  font-size: 2.2rem;
+  font-family: "Playfair Display", serif;
+  color: black;
+  margin-top: 20px;
+}
+/* line 183, ../sass/screen.scss */
+.ourstory p {
+  font-size: 1.7rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 2.4rem;
+  color: "#413d4b";
+  margin-top: 20px;
+}
+
+/* line 192, ../sass/screen.scss */
+.awesome-picture {
+  max-width: 220px;
+  max-height: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* line 200, ../sass/screen.scss */
+.row {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* line 206, ../sass/screen.scss */
+.col-md-6 {
+  width: 50%;
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
+  /* line 211, ../sass/screen.scss */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  /* line 217, ../sass/screen.scss */
+  .col-md-6 {
+    width: 100%;
+  }
 }
