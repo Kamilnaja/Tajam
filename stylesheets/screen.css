@@ -1,146 +1,210 @@
-/* line 5, ../sass/screen.scss */
+/*RESET*/
+/* line 2, ../sass/screen.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 2, ../sass/screen.scss */
+body {
+  line-height: 1;
+}
+
+/* line 2, ../sass/screen.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 2, ../sass/screen.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 2, ../sass/screen.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 2, ../sass/screen.scss */
+:focus {
+  outline: 0;
+}
+
+/* line 2, ../sass/screen.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 2, ../sass/screen.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 2, ../sass/screen.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 7, ../sass/screen.scss */
+.box-shadow-menu {
+  position: relative;
+}
+/* line 9, ../sass/screen.scss */
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.48em;
+  width: 2em;
+  height: 0.35em;
+  background: white;
+  box-shadow: 0 0.6em 0 0 white, 0 1.2em 0 0 white;
+}
+
+/* line 23, ../sass/screen.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 body {
   background-color: #322955;
 }
-
-/* line 11, ../sass/screen.scss */
-nav {
-  height: 40px;
-  width: 100%;
-  background: #322955;
-  font-size: 1.3rem;
+/* line 30, ../sass/screen.scss */
+body a {
+  font-size: 1.5rem;
   font-family: "Roboto slab", serif;
-  font-weight: bold;
-  position: relative;
-}
-/* line 19, ../sass/screen.scss */
-nav ul {
-  padding: 0;
-  margin: 0 auto;
-  width: 600px;
-  height: 40px;
-}
-/* line 25, ../sass/screen.scss */
-nav ul li a {
   color: white;
-}
-/* line 28, ../sass/screen.scss */
-nav li:last-child a {
-  border-right: 0;
-}
-/* line 31, ../sass/screen.scss */
-nav li {
-  display: inline;
-  float: left;
-  margin-right: 27px;
-}
-/* line 36, ../sass/screen.scss */
-nav a {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
   text-decoration: none;
-  line-height: 40px;
 }
-/* line 42, ../sass/screen.scss */
-nav a:hover, nav a:active {
+/* line 35, ../sass/screen.scss */
+body a:hover {
   text-decoration: underline;
 }
-/* line 46, ../sass/screen.scss */
-nav a#pull {
+/* line 39, ../sass/screen.scss */
+body img {
+  width: 100%;
+}
+/* line 44, ../sass/screen.scss */
+body header {
+  width: 100%;
+  height: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 4px solid red;
+  z-index: 100;
+}
+
+/* line 54, ../sass/screen.scss */
+#logo {
+  background-color: white;
+  margin: 20px;
+  float: left;
+  width: 100px;
+  height: 40px;
+  display: block;
+  color: #322955;
+  line-height: 40px;
+  padding-left: 20px;
+}
+
+/* line 65, ../sass/screen.scss */
+nav {
+  float: right;
+  padding: 20px;
+}
+
+/* line 69, ../sass/screen.scss */
+#menu-icon {
   display: none;
 }
 
-/* line 50, ../sass/screen.scss */
-.clearfix {
-  *zoom: 1;
-}
-/* line 52, ../sass/screen.scss */
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-/* line 56, ../sass/screen.scss */
-.clearfix after {
-  clear: both;
+/* line 73, ../sass/screen.scss */
+a:hover#menu-icon {
+  background-color: #444;
+  border-radius: 4px 4px 0 0;
 }
 
-@media screen and (max-width: 600px) {
-  /* line 61, ../sass/screen.scss */
-  nav {
-    height: auto;
-  }
-
-  /* line 64, ../sass/screen.scss */
-  ul {
-    width: 100%;
-    display: block;
-    height: auto;
-  }
-
-  /* line 69, ../sass/screen.scss */
-  li {
-    width: 50%;
-    float: left;
-    position: relative;
-  }
-  /* line 73, ../sass/screen.scss */
-  li a {
-    border-bottom: 1px solid #576979;
-    border-right: 1px solid #576979;
-  }
-
-  /* line 78, ../sass/screen.scss */
-  a {
-    text-align: left;
-    width: 100%;
-    text-indent: 25px;
-  }
+/* line 77, ../sass/screen.scss */
+ul {
+  list-style: none;
 }
-@media only screen and (max-width: 480px) {
-  /* line 85, ../sass/screen.scss */
-  nav {
-    border-bottom: 0;
-  }
-  /* line 88, ../sass/screen.scss */
-  nav ul {
-    display: none;
-    height: auto;
-  }
-  /* line 92, ../sass/screen.scss */
-  nav a#pull {
-    display: block;
-    background-color: #283744;
-    width: 100%;
-    position: relative;
-  }
-  /* line 97, ../sass/screen.scss */
-  nav a#pull:after {
-    content: "";
-    background: url(data:image/png;base64,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) no-repeat;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
+
+/* line 80, ../sass/screen.scss */
+li {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+
+/* line 85, ../sass/screen.scss */
+.current {
+  color: #2262AD;
+}
+
+/* line 88, ../sass/screen.scss */
+section {
+  margin: 80px auto 40px;
+  max-width: 980px;
+  position: relative;
+  paddding: 20px;
+}
+
+@media only screen and (max-width: 740px) {
+  /* line 100, ../sass/screen.scss */
+  header {
     position: absolute;
-    right: 15px;
-    top: 10px;
   }
-}
-@media only screen and (max-width: 320px) {
-  /* line 113, ../sass/screen.scss */
-  nav li {
-    display: block;
-    float: none;
+
+  /* line 103, ../sass/screen.scss */
+  #menu-icon {
+    display: inline-block;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+  }
+
+  /* line 111, ../sass/screen.scss */
+  nav ul, nav:active ul {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    right: 0px;
+    top: 80px;
     width: 100%;
+    background-color: #322955;
   }
-  /* line 117, ../sass/screen.scss */
-  nav li a {
-    border-bottom: 1px solid black;
+
+  /* line 120, ../sass/screen.scss */
+  nav ul a {
     color: white;
   }
+
+  /* ustawienie listy */
+  /* line 124, ../sass/screen.scss */
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  /*	nav:hover ul {
+  		display: block;
+  	} */
+}
+/* koniec nav */
+/* line 136, ../sass/screen.scss */
+.open {
+  display: block;
 }

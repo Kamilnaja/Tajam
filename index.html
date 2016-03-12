@@ -6,23 +6,35 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 	  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="js/jq.js"></script>
 </head>
 <body>
-<!-- menu -->
-<nav class="clearfix">
-	<ul class="clearfix">
-		<li><a href="home">Home</a></li>
-		<li><a href="About">About</a></li>
-		<li><a href="Expertise">Expertise</a></li>
-		<li><a href="Teams">Teams</a></li>
-		<li><a href="Works">Works</a></li>
-		<li><a href="People">People</a></li>
-		<li><a href="Contact">Contact</a></li>
-	</ul>
-	<a href="#" id="pull">Menu </a>
-</nav>
-</div>
+<header>
+	<a href="#" id="logo">Moja strona</a>
+	<nav>
+		<a href="#" id="menu-icon" class="box-shadow-menu"></a>
+		<ul>
+			<li><a href="home" class="current">Home</a></li>
+			<li><a href="About">About</a></li>
+			<li><a href="Expertise">Expertise</a></li>
+			<li><a href="Teams">Teams</a></li>
+			<li><a href="Works">Works</a></li>
+		</ul>
+	</nav>
+</header>
+<script>
+
+jQuery(document).ready(function(){
+	jQuery('.box-shadow-menu').click(function(e){
+		jQuery(this).toggleClass('open');
+		jQuery('nav ul').toggleClass('open');
+
+		e.preventDefault();
+	});
+});
+
+
+</script>
 </body>
 </html>
