@@ -247,17 +247,18 @@ hr {
 .ourstory {
   background-color: white;
   padding: 20px;
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
   display: -webkit-flex;
   display: flex;
 }
-/* line 183, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 .ourstory h2 {
   font-size: 2.2rem;
   font-family: "Playfair Display", serif;
   color: black;
-  margin-top: 20px;
 }
-/* line 189, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .ourstory p {
   font-size: 1.7rem;
   font-family: "Roboto", sans-serif;
@@ -266,7 +267,38 @@ hr {
   margin-top: 20px;
 }
 
-/* line 198, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
+.whatwedo {
+  margin-bottom: 30px;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
+}
+/* line 210, ../sass/screen.scss */
+.whatwedo article {
+  border: solid 2px lightblue;
+  width: 225px;
+  padding: 3px;
+  margin: 10px;
+}
+/* line 217, ../sass/screen.scss */
+.whatwedo h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 2.2rem;
+}
+/* line 222, ../sass/screen.scss */
+.whatwedo p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+/* line 229, ../sass/screen.scss */
 .awesome-picture {
   max-width: 220px;
   max-height: 220px;
@@ -275,19 +307,19 @@ hr {
   display: block;
 }
 
-/* line 206, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .row {
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .col-md-6 {
   width: 50%;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .video {
   background-color: red;
   background-image: url("../img/nj.jpg");
@@ -297,11 +329,11 @@ hr {
   align-items: center;
   justify-content: center;
 }
-/* line 224, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .video .center-video {
   max-width: 50%;
 }
-/* line 227, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .video .center-video .circle {
   width: 100px;
   height: 100px;
@@ -311,7 +343,7 @@ hr {
   border: solid white 5px;
   box-sizing: border-box;
 }
-/* line 237, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .video .center-video .circle .video-triangle {
   font-size: 60px;
   color: white;
@@ -320,11 +352,11 @@ hr {
   left: 20px;
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .expertise {
   text-align: center;
 }
-/* line 249, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .expertise h2 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -334,7 +366,7 @@ hr {
   margin-top: 120px;
   display: inline-block;
 }
-/* line 258, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .expertise h3 {
   font-size: 1.4rem;
   margin: 20px;
@@ -342,7 +374,7 @@ hr {
 }
 
 @media (max-width: 700px) {
-  /* line 267, ../sass/screen.scss */
+  /* line 298, ../sass/screen.scss */
   .row {
     display: -webkit-flex;
     display: flex;
@@ -350,19 +382,19 @@ hr {
     flex-direction: column;
   }
 
-  /* line 273, ../sass/screen.scss */
+  /* line 304, ../sass/screen.scss */
   .col-md-6 {
     width: 100%;
   }
 }
 @media (max-width: 900px) {
-  /* line 278, ../sass/screen.scss */
+  /* line 309, ../sass/screen.scss */
   #logo {
     margin-left: 0;
   }
 }
 @media only screen and (min-width: 320px) {
-  /* line 285, ../sass/screen.scss */
+  /* line 316, ../sass/screen.scss */
   .container {
     margin-left: 5%;
     margin-right: 5%;
@@ -370,7 +402,7 @@ hr {
 }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  /* line 293, ../sass/screen.scss */
+  /* line 324, ../sass/screen.scss */
   .container {
     margin-left: 10%;
     margin-right: 10%;
@@ -378,7 +410,7 @@ hr {
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  /* line 301, ../sass/screen.scss */
+  /* line 332, ../sass/screen.scss */
   .container {
     margin-left: 12%;
     margin-right: 12%;
@@ -386,7 +418,7 @@ hr {
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  /* line 309, ../sass/screen.scss */
+  /* line 340, ../sass/screen.scss */
   .container {
     margin-left: 14%;
     margin-right: 14%;
@@ -394,7 +426,7 @@ hr {
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  /* line 317, ../sass/screen.scss */
+  /* line 348, ../sass/screen.scss */
   .container {
     margin-left: 15%;
     margin-right: 15%;
