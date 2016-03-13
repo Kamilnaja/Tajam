@@ -52,11 +52,11 @@ table {
   border-spacing: 0;
 }
 
-/* line 9, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 .box-shadow-menu {
   position: relative;
 }
-/* line 11, ../sass/screen.scss */
+/* line 12, ../sass/screen.scss */
 .box-shadow-menu:before {
   content: "";
   position: absolute;
@@ -68,12 +68,12 @@ table {
   box-shadow: 0 0.6em 0 0 white, 0 1.2em 0 0 white;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 body a {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
@@ -81,11 +81,11 @@ body a {
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 36, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 body a:hover {
   text-decoration: underline;
 }
-/* line 42, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 body header {
   width: 100%;
   height: 76px;
@@ -94,7 +94,7 @@ body header {
   z-index: 100;
   background-color: #322955;
 }
-/* line 51, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 body header h1 {
   position: relative;
   margin-left: 60px;
@@ -104,7 +104,7 @@ body header h1 {
   font-family: "Roboto", sans-serif;
   color: #2497A3;
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 body header #logo {
   margin-top: 16px;
   float: left;
@@ -113,41 +113,41 @@ body header #logo {
   background-image: url("img/logo.png");
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 nav {
   float: right;
   padding: 20px;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 #menu-icon {
   display: none;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 a:hover#menu-icon {
   background-color: #444;
   border-radius: 4px 4px 0 0;
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 ul {
   list-style: none;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 li {
   display: inline-block;
   float: left;
   padding: 10px;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 .current {
   color: #2262AD;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 section {
   margin: 80px auto 40px;
   max-width: 980px;
@@ -156,12 +156,12 @@ section {
 }
 
 @media only screen and (max-width: 740px) {
-  /* line 103, ../sass/screen.scss */
+  /* line 104, ../sass/screen.scss */
   header {
     position: absolute;
   }
 
-  /* line 106, ../sass/screen.scss */
+  /* line 107, ../sass/screen.scss */
   #menu-icon {
     display: inline-block;
     bottom: 20px;
@@ -171,7 +171,7 @@ section {
     position: absolute;
   }
 
-  /* line 114, ../sass/screen.scss */
+  /* line 115, ../sass/screen.scss */
   nav ul, nav:active ul {
     display: none;
     position: absolute;
@@ -182,13 +182,13 @@ section {
     background-color: #322955;
   }
 
-  /* line 123, ../sass/screen.scss */
+  /* line 124, ../sass/screen.scss */
   nav ul a {
     color: white;
   }
 
   /* ustawienie listy */
-  /* line 127, ../sass/screen.scss */
+  /* line 128, ../sass/screen.scss */
   nav li {
     text-align: center;
     width: 100%;
@@ -201,18 +201,18 @@ section {
   	} */
 }
 /* koniec nav */
-/* line 139, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .open {
   display: block;
 }
 
-/* line 142, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .intro {
   color: white;
   background: url("../img/bg-1.jpg") no-repeat;
   text-align: center;
 }
-/* line 148, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 .intro h2 {
   font-size: 3.2rem;
   margin-left: auto;
@@ -222,7 +222,7 @@ section {
   font-family: "Playfair Display", serif;
   line-height: 3.9rem;
 }
-/* line 159, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .intro p {
   margin-top: 61px;
   font-family: "Roboto", sans-serif;
@@ -230,20 +230,20 @@ section {
   line-height: 2.4rem;
   max-width: 90rem;
 }
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .intro button {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 225px;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 hr {
   width: 30%;
   color: #00e0d0;
 }
 
-/* line 178, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .ourstory {
   background-color: white;
   padding: 20px;
@@ -252,13 +252,13 @@ hr {
   display: -webkit-flex;
   display: flex;
 }
-/* line 185, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .ourstory h2 {
   font-size: 2.2rem;
   font-family: "Playfair Display", serif;
   color: black;
 }
-/* line 192, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .ourstory p {
   font-size: 1.7rem;
   font-family: "Roboto", sans-serif;
@@ -267,7 +267,7 @@ hr {
   margin-top: 20px;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .whatwedo {
   margin-bottom: 30px;
   box-sizing: content-box;
@@ -278,27 +278,29 @@ hr {
   align-content: flex-start;
   text-align: center;
 }
-/* line 210, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .whatwedo article {
   border: solid 2px lightblue;
   width: 225px;
-  padding: 3px;
+  padding: 12px;
   margin: 10px;
 }
-/* line 217, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .whatwedo h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
+  font-weight: bold;
   margin-bottom: 2.2rem;
 }
-/* line 222, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .whatwedo p {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   line-height: 2.2rem;
+  margin-bottom: 30px;
 }
 
-/* line 229, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .awesome-picture {
   max-width: 220px;
   max-height: 220px;
@@ -307,19 +309,19 @@ hr {
   display: block;
 }
 
-/* line 237, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .row {
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
 }
 
-/* line 243, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .col-md-6 {
   width: 50%;
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .video {
   background-color: red;
   background-image: url("../img/nj.jpg");
@@ -329,11 +331,11 @@ hr {
   align-items: center;
   justify-content: center;
 }
-/* line 255, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 .video .center-video {
   max-width: 50%;
 }
-/* line 258, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .video .center-video .circle {
   width: 100px;
   height: 100px;
@@ -343,7 +345,7 @@ hr {
   border: solid white 5px;
   box-sizing: border-box;
 }
-/* line 268, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .video .center-video .circle .video-triangle {
   font-size: 60px;
   color: white;
@@ -352,11 +354,11 @@ hr {
   left: 20px;
 }
 
-/* line 278, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .expertise {
   text-align: center;
 }
-/* line 280, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .expertise h2 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -366,7 +368,7 @@ hr {
   margin-top: 120px;
   display: inline-block;
 }
-/* line 289, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .expertise h3 {
   font-size: 1.4rem;
   margin: 20px;
@@ -374,7 +376,7 @@ hr {
 }
 
 @media (max-width: 700px) {
-  /* line 298, ../sass/screen.scss */
+  /* line 300, ../sass/screen.scss */
   .row {
     display: -webkit-flex;
     display: flex;
@@ -382,19 +384,19 @@ hr {
     flex-direction: column;
   }
 
-  /* line 304, ../sass/screen.scss */
+  /* line 306, ../sass/screen.scss */
   .col-md-6 {
     width: 100%;
   }
 }
 @media (max-width: 900px) {
-  /* line 309, ../sass/screen.scss */
+  /* line 311, ../sass/screen.scss */
   #logo {
     margin-left: 0;
   }
 }
 @media only screen and (min-width: 320px) {
-  /* line 316, ../sass/screen.scss */
+  /* line 318, ../sass/screen.scss */
   .container {
     margin-left: 5%;
     margin-right: 5%;
@@ -402,7 +404,7 @@ hr {
 }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  /* line 324, ../sass/screen.scss */
+  /* line 326, ../sass/screen.scss */
   .container {
     margin-left: 10%;
     margin-right: 10%;
@@ -410,7 +412,7 @@ hr {
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  /* line 332, ../sass/screen.scss */
+  /* line 334, ../sass/screen.scss */
   .container {
     margin-left: 12%;
     margin-right: 12%;
@@ -418,7 +420,7 @@ hr {
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  /* line 340, ../sass/screen.scss */
+  /* line 342, ../sass/screen.scss */
   .container {
     margin-left: 14%;
     margin-right: 14%;
@@ -426,9 +428,106 @@ hr {
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  /* line 348, ../sass/screen.scss */
+  /* line 350, ../sass/screen.scss */
   .container {
     margin-left: 15%;
     margin-right: 15%;
   }
+}
+/* line 355, ../sass/screen.scss */
+.team {
+  text-align: center;
+}
+/* line 357, ../sass/screen.scss */
+.team h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 2.2rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 80px;
+  display: inline-block;
+}
+/* line 366, ../sass/screen.scss */
+.team h3 {
+  font-size: 1.4rem;
+  margin: 20px;
+  color: #FFFFFF;
+}
+
+/* line 373, ../sass/screen.scss */
+.team-wrap {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 379, ../sass/screen.scss */
+.team-bg {
+  background-image: url("../img/bg-2.jpg");
+  text-align: center;
+}
+/* line 385, ../sass/screen.scss */
+.team-bg .cta {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 70px;
+}
+/* line 393, ../sass/screen.scss */
+.team-bg button {
+  margin-top: 30px;
+}
+
+/* line 397, ../sass/screen.scss */
+.team-member {
+  width: 220px;
+  height: 280px;
+  border: solid #a09fa9 1px;
+  margin-bottom: 10px;
+  margin: 10px;
+  text-align: center;
+}
+/* line 404, ../sass/screen.scss */
+.team-member h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+}
+/* line 414, ../sass/screen.scss */
+.team-member h3 {
+  color: #a09fa9;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+/* line 421, ../sass/screen.scss */
+.team-member .foto {
+  background-color: white;
+  width: 220px;
+  height: 220px;
+}
+
+/* line 427, ../sass/screen.scss */
+.btn {
+  padding: 15px;
+  border: 2px #00e0d0 solid;
+  border-radius: 2px;
+  font-family: Arial;
+  text-transform: uppercase;
+  color: #00e0d0;
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-top: 2.0rem;
+  margin-bottom: 2.0rem;
+}
+/* line 438, ../sass/screen.scss */
+.btn:hover {
+  border: 2px red solid;
 }

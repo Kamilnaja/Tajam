@@ -6,6 +6,7 @@ $violet: #322955;
 $roboto: 'Roboto', sans-serif;
 $play: 'Playfair Display', serif;
 $grey: '#413d4b';
+$white: '#FFFFFF';
 .box-shadow-menu { //menu hamb
   position: relative;
 	  &:before {
@@ -204,25 +205,28 @@ hr {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-content: flex-start;
-	text-align: center;
+	justify-content: center; 
+	align-content: flex-start; //pozycjonuje divy
+	text-align: center; //wyrównuje text w divach
 	article {
 		border: solid 2px lightblue;
 		width: 225px;
-		padding: 3px;
+		padding: 12px;
 		margin: 10px;
 
 	}
 		h2 {
 		font-family: $roboto;
 		font-size: 1.4rem;
+		font-weight: bold;
 		margin-bottom: 2.2rem;
+
 } 
  		p {
  	font-family: $roboto;
  	font-size: 1.4rem;
  	line-height: 2.2rem;
+ 	margin-bottom: 30px;
  }
 }
 
@@ -290,8 +294,6 @@ hr {
 		font-size: 1.4rem;
 		margin: 20px;
 		color: lighten($violet, 10%);
-
-
 	}
 }
 @media (max-width: 700px){
@@ -350,3 +352,90 @@ hr {
 				margin-right: 15%;
 				}
     }
+.team {
+	text-align: center;
+	h2{
+		font-family: $play;
+		font-weight: bold;
+		font-size: 2.2rem;
+		color: white;
+		text-transform: uppercase;
+		margin-top: 80px;
+		display: inline-block;
+	}
+	h3 {
+		font-size: 1.4rem;
+		margin: 20px;
+		color: #FFFFFF;
+		
+}
+}
+.team-wrap {
+		flex-direction: row;
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+}
+.team-bg {
+		background-image: url("../img/bg-2.jpg");
+		//background-repeat: repeat-y;
+		//background-color: red;
+	//	height: 712px;
+		text-align: center;
+	.cta {
+			font-family: $roboto;
+			color: white;
+			font-size: 1.4rem;
+			text-align: center;
+			margin-top: 70px;
+
+	}
+button {
+	margin-top: 30px;
+}
+}
+.team-member {//opakowanie na
+		width: 220px;
+		height: 280px;
+		border: solid #a09fa9 1px;
+		margin-bottom: 10px;
+		margin: 10px;
+		text-align: center;
+	h2 {
+		color: white;
+		font-family: $roboto;
+		font-size: 1.4rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: inline-block;
+		margin-top: 10px;
+
+	}
+	h3 {
+		color: #a09fa9;
+		font-family: $roboto;
+		font-size: 1.3rem;
+		margin-top: 10px;
+
+	}
+		.foto {
+			background-color: white;
+			width: 220px;
+			height: 220px;
+		}
+}
+.btn {
+	padding: 15px;
+	border: 2px #00e0d0 solid;
+	border-radius: 2px;
+	font-family: Arial;
+	text-transform: uppercase;
+	color: #00e0d0;
+	font-size: 1.6rem;
+	display: inline-block;
+	margin-top: 2.0rem;
+	margin-bottom: 2.0rem;
+&:hover {
+	border: 2px red solid;
+}
+}
