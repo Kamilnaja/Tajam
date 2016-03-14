@@ -269,12 +269,20 @@ hr {
 	    -webkit-border-radius: 50%;
 	  	 border: solid white 5px;
 	  	 box-sizing: border-box;
+	  	 		&:hover {
+	  	 			
+					box-shadow: 3px 3px 1px black;
+
+	  	 		}
 	.video-triangle {
 		font-size: 60px;
 		color: white;
 		position: relative;
 		top: 15px;
 		left: 20px;
+			&:hover {
+				color: salmon;
+			}
 			} 
 		}
 	}
@@ -430,12 +438,96 @@ button {
 	border-radius: 2px;
 	font-family: Arial;
 	text-transform: uppercase;
-	color: #00e0d0;
+	color: #00E0D0;
 	font-size: 1.6rem;
 	display: inline-block;
 	margin-top: 2.0rem;
-	margin-bottom: 2.0rem;
+	margin-bottom: 7.0rem;
+	background-color: transparent;
+	box-sizing: border-box;
 &:hover {
-	border: 2px red solid;
+	border: 2px salmon solid;
+	color: salmon;
+	font-weight: bold;
+		box-sizing: border-box;
+		box-shadow: 3px 3px 1px black;
+
+
 }
+}
+.works {
+	text-align: center;
+}
+.works p{
+	font-family: $play;
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	display: inline-block;
+
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	.image {
+		width: 270px;
+		height: 200px;
+		background-color: salmon;
+		margin: 5px;
+	}
+	.image2 {
+		background-color: lightblue;
+		width: 270px;
+		height: 200px;
+		margin: 5px;
+	}
+}	.image3 {
+		background-color: green;
+		width: 270px;
+		height: 200px;
+		margin: 5px;
+
+}
+.testimonials {
+	background: url("../img/bg-3.jpg") no-repeat;
+	text-align: center;
+	font-size: 1.6rem;
+	font-family: $play;
+	line-height: 30px;
+	color: white;
+	padding-top: 140px;
+		h2 {
+			font-family: $roboto;
+			font-size: 1.6rem;
+			text-transform: uppercase;
+		}
+		h3 {
+			color: lighten($violet, 50%);
+			text-transform: uppercase;
+		}
+}
+.inputs form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.inputs .input {
+	
+} 
+form input {
+	margin-top: 20px;
+	height: 30px;
+}
+form input:last-child{
+	height: 100px;
+}
+.inputs {
+	h2 {
+		font-family: $play;
+		font-size: 2.2rem;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
 }
