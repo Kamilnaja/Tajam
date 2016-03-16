@@ -90,7 +90,7 @@ body header {
   width: 100%;
   height: 76px;
   position: fixed;
-  border-bottom: 4px solid magenta;
+  border-bottom: 4px solid white;
   z-index: 100;
   background-color: #322955;
 }
@@ -131,12 +131,12 @@ a:hover#menu-icon {
 }
 
 /* line 82, ../sass/screen.scss */
-ul {
+nav ul {
   list-style: none;
 }
 
 /* line 86, ../sass/screen.scss */
-li {
+nav li {
   display: inline-block;
   float: left;
   padding: 10px;
@@ -210,9 +210,11 @@ section {
 .intro {
   color: white;
   background: url("../img/bg-1.jpg") no-repeat;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-/* line 149, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .intro h2 {
   font-size: 3.2rem;
   margin-left: auto;
@@ -222,28 +224,30 @@ section {
   font-family: "Playfair Display", serif;
   line-height: 3.9rem;
 }
-/* line 160, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .intro p {
   margin-top: 61px;
   font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
   line-height: 2.4rem;
   max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 167, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .intro button {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 225px;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 hr {
   width: 30%;
   color: #00e0d0;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .ourstory {
   background-color: white;
   padding: 20px;
@@ -252,13 +256,13 @@ hr {
   display: -webkit-flex;
   display: flex;
 }
-/* line 186, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .ourstory h2 {
   font-size: 2.2rem;
   font-family: "Playfair Display", serif;
   color: black;
 }
-/* line 193, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .ourstory p {
   font-size: 1.7rem;
   font-family: "Roboto", sans-serif;
@@ -267,7 +271,7 @@ hr {
   margin-top: 20px;
 }
 
-/* line 202, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .whatwedo {
   margin-bottom: 30px;
   box-sizing: content-box;
@@ -278,21 +282,21 @@ hr {
   align-content: flex-start;
   text-align: center;
 }
-/* line 211, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .whatwedo article {
   border: solid 2px lightblue;
   width: 225px;
   padding: 12px;
   margin: 10px;
 }
-/* line 218, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .whatwedo h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 2.2rem;
 }
-/* line 225, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .whatwedo p {
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
@@ -300,7 +304,7 @@ hr {
   margin-bottom: 30px;
 }
 
-/* line 233, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .awesome-picture {
   max-width: 220px;
   max-height: 220px;
@@ -309,19 +313,19 @@ hr {
   display: block;
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .row {
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
 }
 
-/* line 247, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .col-md-6 {
   width: 50%;
 }
 
-/* line 251, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .video {
   background-color: red;
   background-image: url("../img/nj.jpg");
@@ -331,11 +335,11 @@ hr {
   align-items: center;
   justify-content: center;
 }
-/* line 259, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .video .center-video {
   max-width: 50%;
 }
-/* line 262, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .video .center-video .circle {
   width: 100px;
   height: 100px;
@@ -345,11 +349,11 @@ hr {
   border: solid white 5px;
   box-sizing: border-box;
 }
-/* line 272, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .video .center-video .circle:hover {
   box-shadow: 3px 3px 1px black;
 }
-/* line 277, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .video .center-video .circle .video-triangle {
   font-size: 60px;
   color: white;
@@ -357,16 +361,16 @@ hr {
   top: 15px;
   left: 20px;
 }
-/* line 283, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .video .center-video .circle .video-triangle:hover {
   color: salmon;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .expertise {
   text-align: center;
 }
-/* line 292, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .expertise h2 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -376,7 +380,7 @@ hr {
   margin-top: 120px;
   display: inline-block;
 }
-/* line 301, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .expertise h3 {
   font-size: 1.4rem;
   margin: 20px;
@@ -384,7 +388,7 @@ hr {
 }
 
 @media (max-width: 700px) {
-  /* line 308, ../sass/screen.scss */
+  /* line 312, ../sass/screen.scss */
   .row {
     display: -webkit-flex;
     display: flex;
@@ -392,19 +396,19 @@ hr {
     flex-direction: column;
   }
 
-  /* line 314, ../sass/screen.scss */
+  /* line 318, ../sass/screen.scss */
   .col-md-6 {
     width: 100%;
   }
 }
 @media (max-width: 900px) {
-  /* line 319, ../sass/screen.scss */
+  /* line 323, ../sass/screen.scss */
   #logo {
     margin-left: 0;
   }
 }
 @media only screen and (min-width: 320px) {
-  /* line 326, ../sass/screen.scss */
+  /* line 330, ../sass/screen.scss */
   .container {
     margin-left: 5%;
     margin-right: 5%;
@@ -412,7 +416,7 @@ hr {
 }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  /* line 334, ../sass/screen.scss */
+  /* line 338, ../sass/screen.scss */
   .container {
     margin-left: 10%;
     margin-right: 10%;
@@ -420,7 +424,7 @@ hr {
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  /* line 342, ../sass/screen.scss */
+  /* line 346, ../sass/screen.scss */
   .container {
     margin-left: 12%;
     margin-right: 12%;
@@ -428,7 +432,7 @@ hr {
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  /* line 350, ../sass/screen.scss */
+  /* line 354, ../sass/screen.scss */
   .container {
     margin-left: 14%;
     margin-right: 14%;
@@ -436,17 +440,17 @@ hr {
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  /* line 358, ../sass/screen.scss */
+  /* line 362, ../sass/screen.scss */
   .container {
     margin-left: 15%;
     margin-right: 15%;
   }
 }
-/* line 363, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 .team {
   text-align: center;
 }
-/* line 365, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 .team h2 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -456,14 +460,14 @@ hr {
   margin-top: 80px;
   display: inline-block;
 }
-/* line 374, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 .team h3 {
   font-size: 1.4rem;
   margin: 20px;
   color: #FFFFFF;
 }
 
-/* line 381, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 .team-wrap {
   flex-direction: row;
   flex-wrap: wrap;
@@ -471,12 +475,12 @@ hr {
   justify-content: center;
 }
 
-/* line 387, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .team-bg {
   background-image: url("../img/bg-2.jpg");
   text-align: center;
 }
-/* line 393, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 .team-bg .cta {
   font-family: "Roboto", sans-serif;
   color: white;
@@ -484,12 +488,12 @@ hr {
   text-align: center;
   margin-top: 70px;
 }
-/* line 401, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .team-bg button {
   margin-top: 30px;
 }
 
-/* line 405, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 .team-member {
   width: 220px;
   height: 280px;
@@ -498,7 +502,7 @@ hr {
   margin: 10px;
   text-align: center;
 }
-/* line 412, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 .team-member h2 {
   color: white;
   font-family: "Roboto", sans-serif;
@@ -508,21 +512,21 @@ hr {
   display: inline-block;
   margin-top: 10px;
 }
-/* line 422, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 .team-member h3 {
   color: #a09fa9;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   margin-top: 10px;
 }
-/* line 429, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 .team-member .foto {
   background-color: white;
   width: 220px;
   height: 220px;
 }
 
-/* line 435, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .btn {
   padding: 15px;
   border: 2px #00e0d0 solid;
@@ -536,22 +540,25 @@ hr {
   margin-bottom: 7.0rem;
   background-color: transparent;
   box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 448, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .btn:hover {
   border: 2px salmon solid;
   color: salmon;
   font-weight: bold;
   box-sizing: border-box;
-  box-shadow: 3px 3px 1px black;
+  box-shadow: 0px 3px 1px black;
+  cursor: pointer;
 }
 
-/* line 458, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 .works {
   text-align: center;
 }
 
-/* line 461, ../sass/screen.scss */
+/* line 470, ../sass/screen.scss */
 .works p {
   font-family: "Playfair Display", serif;
   font-size: 2.2rem;
@@ -561,20 +568,20 @@ hr {
   display: inline-block;
 }
 
-/* line 470, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 474, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 .gallery .image {
   width: 270px;
   height: 200px;
   background-color: salmon;
   margin: 5px;
 }
-/* line 480, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .gallery .image2 {
   background-color: lightblue;
   width: 270px;
@@ -582,7 +589,7 @@ hr {
   margin: 5px;
 }
 
-/* line 486, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 .image3 {
   background-color: green;
   width: 270px;
@@ -590,9 +597,10 @@ hr {
   margin: 5px;
 }
 
-/* line 493, ../sass/screen.scss */
+/* line 503, ../sass/screen.scss */
 .testimonials {
   background: url("../img/bg-3.jpg") no-repeat;
+  background-position: center fixed;
   text-align: center;
   font-size: 1.6rem;
   font-family: "Playfair Display", serif;
@@ -600,40 +608,53 @@ hr {
   color: white;
   padding-top: 140px;
 }
-/* line 501, ../sass/screen.scss */
+/* line 512, ../sass/screen.scss */
 .testimonials h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   text-transform: uppercase;
 }
-/* line 506, ../sass/screen.scss */
+/* line 517, ../sass/screen.scss */
 .testimonials h3 {
   color: #b1a8d5;
   text-transform: uppercase;
 }
 
-/* line 511, ../sass/screen.scss */
-.inputs form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* line 519, ../sass/screen.scss */
-form input {
-  margin-top: 20px;
-  height: 30px;
-}
-
 /* line 523, ../sass/screen.scss */
-form input:last-child {
-  height: 100px;
+.inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-/* line 527, ../sass/screen.scss */
+/* line 529, ../sass/screen.scss */
 .inputs h2 {
   font-family: "Playfair Display", serif;
   font-size: 2.2rem;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+/* line 539, ../sass/screen.scss */
+.inputs > div {
+  width: 40%;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 545, ../sass/screen.scss */
+form input {
+  margin-top: 20px;
+  height: 30px;
+}
+
+/* line 550, ../sass/screen.scss */
+.clients {
+  font-size: 1.7rem;
+}
+
+/* line 554, ../sass/screen.scss */
+.clients li {
+  margin-top: 20px;
 }

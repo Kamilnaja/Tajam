@@ -44,7 +44,7 @@ body {
 			width: 100%;
 			height: 76px;
 			position: fixed;
-			border-bottom: 4px solid magenta;
+			border-bottom: 4px solid white;
 			z-index: 100;
 			background-color: $violet;
 			
@@ -79,11 +79,11 @@ a:hover#menu-icon {
 	background-color: #444;
 	border-radius: 4px 4px 0 0;
 }
-ul {
+nav ul {
 	list-style: none;
 
 }
-li {
+nav li {
 	display: inline-block;
 	float: left;
 	padding: 10px;
@@ -143,7 +143,9 @@ section {
 .intro {
 	color: white;
 	background: url("../img/bg-1.jpg") no-repeat ;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 
 
  	h2 {
@@ -162,7 +164,9 @@ section {
 	 	font-family: $roboto;
 	 	font-size: 1.7rem;
 	 	line-height: 2.4rem;
-	 		max-width: 90rem;
+	 	max-width: 90rem;
+	 	margin-left: auto;
+		margin-right: auto;
 	 }
 	button {
 		text-align: center;
@@ -445,12 +449,17 @@ button {
 	margin-bottom: 7.0rem;
 	background-color: transparent;
 	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+
+
 &:hover {
 	border: 2px salmon solid;
 	color: salmon;
 	font-weight: bold;
-		box-sizing: border-box;
-		box-shadow: 3px 3px 1px black;
+	box-sizing: border-box;
+	box-shadow: 0px 3px 1px black;
+	cursor: pointer;
 
 
 }
@@ -471,6 +480,7 @@ button {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
 	.image {
 		width: 270px;
 		height: 200px;
@@ -492,6 +502,7 @@ button {
 }
 .testimonials {
 	background: url("../img/bg-3.jpg") no-repeat;
+	background-position: center fixed;
 	text-align: center;
 	font-size: 1.6rem;
 	font-family: $play;
@@ -508,26 +519,38 @@ button {
 			text-transform: uppercase;
 		}
 }
-.inputs form{
+
+.inputs
+{
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.inputs .input {
-	
-} 
-form input {
-	margin-top: 20px;
-	height: 30px;
-}
-form input:last-child{
-	height: 100px;
-}
-.inputs {
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	h2 {
 		font-family: $play;
 		font-size: 2.2rem;
 		margin-top: 50px;
 		margin-bottom: 50px;
+		
+
 	}
+}
+
+.inputs > div {
+	width: 40%;
+	background-color: salmon;
+	display: flex;
+	justify-content: center;
+}
+form input {
+	margin-top: 20px;
+	height: 30px;
+}
+
+.clients {
+	font-size: 1.7rem;
+
+}
+.clients li {
+	margin-top: 20px;
 }
