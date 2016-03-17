@@ -521,40 +521,63 @@ button {
 
 .inputs
 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+
+
+
 	h2 {
 		font-family: $play;
 		font-size: 2.2rem;
-	
-		margin-bottom: 50px;
-		
-
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 }
 
-.inputs > div {
-	width: 40%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+
+
+@media (max-width: 901px){
+	.inputs {
+		flex-direction: column; }//zmienia wyświetlanie kolumny i formularza
+	.clients {
+		flex-direction: row;
+		display: flex;
+	}
+	
+	
+}
+
+input#text-area {
+height: 200px;
 
 }
 form input {
 	margin-top: 20px;
 	height: 30px;
+	width: 300px;
 }
 
 .clients {
 	font-size: 1.7rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 
 }
-.clients li {
-	margin-top: 20px;
+
+.clients div {
+	color: white;
+	background-color: cornflowerblue;
+	width: 200px;
+	height: 150px;
+	font-size: 2.0rem;
+	box-sizing: border-box;
+	margin: 10px;
+	line-height: 150px;
+	text-align: center;
 }
-.our_clients ul li {
-	padding: 20px;
-	background-color: salmon;
+.clients div p {
+	
+}
+footer {
+	background-image: url("../img/bg-4.jpg");
+	height: 400px;
 }

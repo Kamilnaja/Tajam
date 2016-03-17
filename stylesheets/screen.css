@@ -617,46 +617,61 @@ hr {
   text-transform: uppercase;
 }
 
-/* line 522, ../sass/screen.scss */
-.inputs {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-/* line 528, ../sass/screen.scss */
+/* line 527, ../sass/screen.scss */
 .inputs h2 {
   font-family: "Playfair Display", serif;
   font-size: 2.2rem;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-/* line 538, ../sass/screen.scss */
-.inputs > div {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+@media (max-width: 901px) {
+  /* line 538, ../sass/screen.scss */
+  .inputs {
+    flex-direction: column;
+  }
+
+  /* line 540, ../sass/screen.scss */
+  .clients {
+    flex-direction: row;
+    display: flex;
+  }
+}
+/* line 548, ../sass/screen.scss */
+input#text-area {
+  height: 200px;
 }
 
-/* line 545, ../sass/screen.scss */
+/* line 552, ../sass/screen.scss */
 form input {
   margin-top: 20px;
   height: 30px;
+  width: 300px;
 }
 
-/* line 550, ../sass/screen.scss */
+/* line 558, ../sass/screen.scss */
 .clients {
   font-size: 1.7rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-/* line 554, ../sass/screen.scss */
-.clients li {
-  margin-top: 20px;
+/* line 566, ../sass/screen.scss */
+.clients div {
+  color: white;
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 150px;
+  font-size: 2.0rem;
+  box-sizing: border-box;
+  margin: 10px;
+  line-height: 150px;
+  text-align: center;
 }
 
-/* line 557, ../sass/screen.scss */
-.our_clients ul li {
-  padding: 20px;
-  background-color: salmon;
+/* line 580, ../sass/screen.scss */
+footer {
+  background-image: url("../img/bg-4.jpg");
+  height: 400px;
 }

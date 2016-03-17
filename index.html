@@ -189,18 +189,23 @@
 </article>
 <!-- tutaj galeria fotek -->
 
-
-
-<article class="inputs">	
+<div class="container">
+<article class="inputs" style="
+display: flex;
+flex-wrap: column;
+flex-direction: row;
+justify-content: center;
+flex-wrap: nowrap;
+">
 	<div>
 	<h2>Give a good news</h2>
 
-	<form style="float: left;">
+	<form>
 		<ul>
 		<li><input type="text" name="first-name" id="first-name" autofocus placeholder="text"></li>
 		<li><input type="e-mail" name="e-mail" id="e-mail" placeholder="e-mail"></li>
-		<li>	<input type="subject" name="subject" id="subject" placeholder="subject"></li>
-		<li><input type="text-area" name="text" id="text" placeholder="Your message"></li>
+		<li><input type="subject" name="subject" id="subject" placeholder="subject"></li>
+		<li><input type="text-area" name="text" id="text-area" placeholder="Your message"></li>
 		</ul>
 		<button type="submit" class="btn">Send Message</button>
 	</form>
@@ -210,24 +215,21 @@
 		<div>
 		<aside class="our_clients">
 			<h2>Our happy clients</h2>
-			
-		 
-			<ul class="clients">
-				<li>Barneys</li>
-				<li>Barneys</li>
-				<li>Barneys</li>
-				<li>Barneys</li>
-				<li>Barneys</li>
-				<li>Barneys</li>
-				<li>Barneys</li>
-				<li>Barneys</li>
-				<li>Barneys</li>
-				<li>Barneys</li>
-			</ul>
+			<div class="clients">
+				<div><p>Jeden</p></div>
+				<div><p>Dwa</p></div>
+				<div><p>Trzy</p></div>
+				<div><p>Cztery</p></div>
+				<div><p>Pięć</p></div>
+				<div><p>Sześć</div>
+				<div><p>Siedem</div>
+			</div>
 		</aside>
-	</div>
+	
 	</article>
-
+</div>
+<footer>
+</footer>
 </main>
 <script>
 
