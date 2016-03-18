@@ -6,7 +6,21 @@ $violet: #322955;
 $roboto: 'Roboto', sans-serif;
 $play: 'Playfair Display', serif;
 $grey: #413d4b;
-$white: '#FFFFFF';
+$white: #FFFFFF;
+$bluegreen: #2497A3;
+/*wszystkie elementy mają border-box */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+
 .box-shadow-menu { //menu hamb
   position: relative;
 	  &:before {
@@ -16,47 +30,44 @@ $white: '#FFFFFF';
 		  top: 0.48em;
 		  width: 2em;
 		  height: 0.35em;
-		  background: white;
+		  background: $white;
 		  box-shadow: 
-		    0 0.6em 0 0 white, //reguluje wielkość 
-		    0 1.2em 0 0 white;
+		    0 0.6em 0 0 $white, //reguluje wielkość 
+		    0 1.2em 0 0 $white;
 	}
 }
 html {
 	font-size: 62.5%;
 }
-
+p {
+	font: 1.6rem $roboto;
+	line-height: 2.4rem;
+}
 body {
-
+	
 	a {
 		font-size: 1.5rem;
-		font-family: $roboto;
-		color: white;
+		color: $white;
 		text-decoration: none;
 		text-transform: uppercase;
 	&:hover {
-		text-decoration: underline;
+			text-decoration: underline;
 		}
 	}
-
-	
 	header {
 			width: 100%;
 			height: 76px;
 			position: fixed;
-			border-bottom: 4px solid white;
+			border-bottom: 4px solid $white;
 			z-index: 100;
 			background-color: $violet;
-			
-
 			h1 { //logo strony tekstowe
 					position: relative;
 					margin-left: 60px;
 					bottom: 45px;
 					text-transform: none;
-					font-size: 3.0rem;
-					font-family: $roboto;
-					color: #2497A3;
+					font: 3.0rem $roboto;
+					color: $bluegreen;
 				}
 			#logo { //logo obrazkowe
 				margin-top: 16px;
@@ -68,138 +79,87 @@ body {
 			}
 }
 
-nav {
+nav { //menu głowne
 	float: right;
 	padding: 20px;
 }
-#menu-icon {
+#menu-icon { //ukrywa menu 
 	display: none;
 }
 a:hover#menu-icon {
 	background-color: #444;
 	border-radius: 4px 4px 0 0;
 }
-nav ul {
-	list-style: none;
-
-}
-nav li {
-	display: inline-block;
-	float: left;
-	padding: 10px;
+nav  {
+	ul {
+		list-style: none;
+	}
+	li {
+		display: inline-block;
+		float: left;
+		padding: 10px;
+	}
 }
 .current {
 	color: #2262AD; // zmienia kolor 
 }
-section {
-	margin: 80px auto 40px;
-	max-width: 980px;
-	position: relative;
-	padding: 20px;
-}
 
-
-@media only screen and (max-width : 740px) {
-
-	header {
-		position: absolute;
-	}
-	#menu-icon {
-		display:inline-block;
-		bottom: 20px;
-		right: 20px;
-		width: 40px;
-		height: 40px;
-		position: absolute;
-	}
-	nav ul, nav:active ul { 
-		display: none;
-		position: absolute;
-		padding: 20px;
-		right: 0px;
-		top: 80px;
-		width: 100%;
-		background-color: $violet;
-	}
-	nav ul a {
-		color: white;
-	}
-/* ustawienie listy */
-	nav li {
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
-
-	}
-
-/*	nav:hover ul {
-		display: block;
-	} */
-}/* koniec nav */
 .open {
 	display: block;
 }
 .intro {
-	color: white;
+	color: $white;
 	background: url("../img/bg-1.jpg") no-repeat ;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-
-
+	padding: 120px 5% 0;
+	
  	h2 {
- 		font-size: 3.2rem;
-		margin-left: auto;
-		margin-right: auto;
+		margin: 0 auto;
 		display: inline-block;
-		margin-top: 120px;
-		font-family: $play;
 		line-height: 3.9rem;
-	
-	
+		font: 3.2rem $play;
 	 	}
 	 p {
-	 	margin-top: 61px;
-	 	font-family: $roboto;
-	 	font-size: 1.7rem;
 	 	line-height: 2.4rem;
 	 	max-width: 90rem;
-	 	margin-left: auto;
-		margin-right: auto;
+		margin: 61px auto 0;
+
 	 }
 	button {
 		text-align: center;
 		margin-top: 30px;
-		margin-bottom: 225px;
 	}
 }
 
 hr {
 	width: 30%;
-	color: #00e0d0;
+	color: $bluegreen;
 }
 
 .ourstory {
-	background-color: white;
-	padding: 20px;
-	padding-top: 7.2rem;
-	padding-bottom: 7.2rem;
+	background-color: $white;
 	display: flex;
+	padding: 5.5rem 5% 0;
+
 	h2 {
 		font-size: 2.2rem;
 		font-family: $play;
 		color: black;
-
-	
+		margin: 0 auto;
 	}
 	p {
-		font-size: 1.7rem;
-		font-family: $roboto;
-		line-height: 2.4rem;
+		
 		color: $grey;
 		margin-top: 20px;
+	}
 
+	img {
+		width: 50%;
+		height: auto;
+		margin-bottom: 40px;
+	
 	}
 }
 .whatwedo {
@@ -219,16 +179,12 @@ hr {
 
 	}
 		h2 {
-		font-family: $roboto;
-		font-size: 1.4rem;
-		font-weight: bold;
+		font: bold 1.4rem $roboto ;
 		margin-bottom: 2.2rem;
 
 } 
  		p {
- 	font-family: $roboto;
- 	font-size: 1.4rem;
- 	line-height: 2.2rem;
+
  	margin-bottom: 30px;
  }
 }
@@ -241,12 +197,7 @@ hr {
 	display: block;
 	
 }
-.row {
 
-	
-	display: flex;
-
-}
 .col-md-6 {
 	width: 50%;
 	
@@ -264,7 +215,7 @@ hr {
 
 	.circle {
 
-	    //background: white;
+	 
 	    width: 100px;
 	    height: 100px;
 	    border-radius: 50%;
@@ -279,7 +230,7 @@ hr {
 	  	 		}
 	.video-triangle {
 		font-size: 60px;
-		color: white;
+		color: $white;
 		position: relative;
 		top: 15px;
 		left: 20px;
@@ -370,7 +321,7 @@ hr {
 		font-family: $play;
 		font-weight: bold;
 		font-size: 2.2rem;
-		color: white;
+		color: $white;
 		text-transform: uppercase;
 		margin-top: 80px;
 		display: inline-block;
@@ -395,8 +346,8 @@ hr {
 	//	height: 712px;
 		text-align: center;
 	.cta {
-			font-family: $roboto;
-			color: white;
+
+			color: $white;
 			font-size: 1.4rem;
 			text-align: center;
 			margin-top: 70px;
@@ -414,7 +365,7 @@ button {
 		margin: 10px;
 		text-align: center;
 	h2 {
-		color: white;
+		color: $white;
 		font-family: $roboto;
 		font-size: 1.4rem;
 		font-weight: bold;
@@ -431,7 +382,7 @@ button {
 
 	}
 		.foto {
-			background-color: white;
+			background-color: $white;
 			width: 220px;
 			height: 220px;
 		}
@@ -440,29 +391,20 @@ button {
 	padding: 15px;
 	border: 2px #00e0d0 solid;
 	border-radius: 2px;
-	font-family: Arial;
+	font: bold 1.6rem Arial;
 	text-transform: uppercase;
-	color: #00E0D0;
-	font-size: 1.6rem;
+	color: $bluegreen;
 	display: inline-block;
-	margin-top: 2.0rem;
-	margin-bottom: 7.0rem;
 	background-color: transparent;
-	box-sizing: border-box;
-	margin-left: auto;
-	margin-right: auto;
-
+	margin: 2.0rem auto 7.0rem auto;
 
 &:hover {
 	border: 2px salmon solid;
 	color: salmon;
-	font-weight: bold;
 	box-sizing: border-box;
-	box-shadow: 0px 3px 1px black;
 	cursor: pointer;
 
-
-}
+	}
 }
 .works {
 	text-align: center;
@@ -474,7 +416,6 @@ button {
 	margin-top: 70px;
 	margin-bottom: 70px;
 	display: inline-block;
-
 }
 .gallery {
 	display: flex;
@@ -507,7 +448,7 @@ button {
 	font-size: 1.6rem;
 	font-family: $play;
 	line-height: 30px;
-	color: white;
+	color: $white;
 	padding-top: 140px;
 		h2 {
 			font-family: $roboto;
@@ -566,7 +507,7 @@ form input {
 }
 
 .clients div {
-	color: white;
+	color: $white;
 	background-color: cornflowerblue;
 	width: 200px;
 	height: 150px;
@@ -580,7 +521,7 @@ form input {
 footer {
 	background-image: url("../img/bg-4.jpg");
 	background-repeat: repeat-y;
-	color: white;
+	color: $white;
 	display: flex;
 	flex-wrap: nowrap; //zmienić na niskiej szerokści ekranu
 	justify-content: center;
@@ -613,8 +554,8 @@ footer {
 		} 
 		input {
 			height: 30px;
-			background-color: white;
-			color: #9d97af;
+			background-color: $white;
+			color: #9d97af; // zmienić tu kolor !!!!
 			height: 45px;
 
 
@@ -636,9 +577,6 @@ footer {
 	}
 	
 	p {
-		font-family: $roboto;
-		font-size: 1.4rem;
-		line-height: 2.4rem;
 		margin-bottom: 4.1rem;
 		margin-right: 30px;
 		max-width: 300px;
@@ -675,4 +613,39 @@ footer {
 
 		}
 	}
+}
+@media only screen and (max-width : 740px) {
+
+	header {
+		position: absolute;
+			}
+	#menu-icon {
+		display:inline-block;
+		bottom: 20px;
+		right: 20px;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+	}
+	nav ul, nav:active ul { 
+		display: none;
+		position: absolute;
+		padding: 20px;
+		right: 0px;
+		top: 80px;
+		width: 100%;
+		background-color: $violet;
+	}
+	nav ul a {
+		color: $white;
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+	}
+
+
 }
