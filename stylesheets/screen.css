@@ -284,7 +284,7 @@ hr {
 /* line 214, ../sass/screen.scss */
 .whatwedo article {
   border: solid 2px lightblue;
-  width: 225px;
+  max-width: 225px;
   padding: 12px;
   margin: 10px;
 }
@@ -405,7 +405,7 @@ hr {
   }
 }
 @media only screen and (min-width: 320px) {
-  /* line 329, ../sass/screen.scss */
+  /* line 330, ../sass/screen.scss */
   .container {
     margin-left: 5%;
     margin-right: 5%;
@@ -413,7 +413,7 @@ hr {
 }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  /* line 337, ../sass/screen.scss */
+  /* line 338, ../sass/screen.scss */
   .container {
     margin-left: 10%;
     margin-right: 10%;
@@ -421,7 +421,7 @@ hr {
 }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  /* line 345, ../sass/screen.scss */
+  /* line 346, ../sass/screen.scss */
   .container {
     margin-left: 12%;
     margin-right: 12%;
@@ -429,7 +429,7 @@ hr {
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  /* line 353, ../sass/screen.scss */
+  /* line 354, ../sass/screen.scss */
   .container {
     margin-left: 14%;
     margin-right: 14%;
@@ -437,17 +437,17 @@ hr {
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
-  /* line 361, ../sass/screen.scss */
+  /* line 362, ../sass/screen.scss */
   .container {
     margin-left: 15%;
     margin-right: 15%;
   }
 }
-/* line 366, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 .team {
   text-align: center;
 }
-/* line 368, ../sass/screen.scss */
+/* line 369, ../sass/screen.scss */
 .team h2 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
@@ -457,14 +457,14 @@ hr {
   margin-top: 80px;
   display: inline-block;
 }
-/* line 377, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 .team h3 {
   font-size: 1.4rem;
   margin: 20px;
   color: #FFFFFF;
 }
 
-/* line 384, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 .team-wrap {
   flex-direction: row;
   flex-wrap: wrap;
@@ -472,12 +472,12 @@ hr {
   justify-content: center;
 }
 
-/* line 390, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .team-bg {
   background-image: url("../img/bg-2.jpg");
   text-align: center;
 }
-/* line 396, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 .team-bg .cta {
   font-family: "Roboto", sans-serif;
   color: white;
@@ -485,12 +485,12 @@ hr {
   text-align: center;
   margin-top: 70px;
 }
-/* line 404, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .team-bg button {
   margin-top: 30px;
 }
 
-/* line 408, ../sass/screen.scss */
+/* line 409, ../sass/screen.scss */
 .team-member {
   width: 220px;
   height: 280px;
@@ -499,7 +499,7 @@ hr {
   margin: 10px;
   text-align: center;
 }
-/* line 415, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 .team-member h2 {
   color: white;
   font-family: "Roboto", sans-serif;
@@ -509,21 +509,21 @@ hr {
   display: inline-block;
   margin-top: 10px;
 }
-/* line 425, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 .team-member h3 {
   color: #a09fa9;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   margin-top: 10px;
 }
-/* line 432, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 .team-member .foto {
   background-color: white;
   width: 220px;
   height: 220px;
 }
 
-/* line 438, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .btn {
   padding: 15px;
   border: 2px #00e0d0 solid;
@@ -540,7 +540,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 455, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .btn:hover {
   border: 2px salmon solid;
   color: salmon;
@@ -550,12 +550,12 @@ hr {
   cursor: pointer;
 }
 
-/* line 466, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 .works {
   text-align: center;
 }
 
-/* line 469, ../sass/screen.scss */
+/* line 470, ../sass/screen.scss */
 .works p {
   font-family: "Playfair Display", serif;
   font-size: 2.2rem;
@@ -565,20 +565,20 @@ hr {
   display: inline-block;
 }
 
-/* line 478, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-/* line 483, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 .gallery .image {
   width: 270px;
   height: 200px;
   background-color: salmon;
   margin: 5px;
 }
-/* line 489, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .gallery .image2 {
   background-color: lightblue;
   width: 270px;
@@ -586,7 +586,7 @@ hr {
   margin: 5px;
 }
 
-/* line 495, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 .image3 {
   background-color: green;
   width: 270px;
@@ -594,7 +594,7 @@ hr {
   margin: 5px;
 }
 
-/* line 502, ../sass/screen.scss */
+/* line 503, ../sass/screen.scss */
 .testimonials {
   background: url("../img/bg-3.jpg") no-repeat;
   background-position: center fixed;
@@ -605,19 +605,19 @@ hr {
   color: white;
   padding-top: 140px;
 }
-/* line 511, ../sass/screen.scss */
+/* line 512, ../sass/screen.scss */
 .testimonials h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   text-transform: uppercase;
 }
-/* line 516, ../sass/screen.scss */
+/* line 517, ../sass/screen.scss */
 .testimonials h3 {
   color: #b1a8d5;
   text-transform: uppercase;
 }
 
-/* line 527, ../sass/screen.scss */
+/* line 528, ../sass/screen.scss */
 .inputs h2 {
   font-family: "Playfair Display", serif;
   font-size: 2.2rem;
@@ -626,30 +626,30 @@ hr {
 }
 
 @media (max-width: 901px) {
-  /* line 538, ../sass/screen.scss */
+  /* line 539, ../sass/screen.scss */
   .inputs {
     flex-direction: column;
   }
 
-  /* line 540, ../sass/screen.scss */
+  /* line 541, ../sass/screen.scss */
   .clients {
     flex-direction: row;
     display: flex;
   }
 }
-/* line 548, ../sass/screen.scss */
+/* line 549, ../sass/screen.scss */
 input#text-area {
   height: 200px;
 }
 
-/* line 552, ../sass/screen.scss */
+/* line 553, ../sass/screen.scss */
 form input {
   margin-top: 20px;
   height: 30px;
-  width: 300px;
+  max-width: 270px;
 }
 
-/* line 558, ../sass/screen.scss */
+/* line 560, ../sass/screen.scss */
 .clients {
   font-size: 1.7rem;
   display: flex;
@@ -657,7 +657,7 @@ form input {
   flex-wrap: wrap;
 }
 
-/* line 566, ../sass/screen.scss */
+/* line 568, ../sass/screen.scss */
 .clients div {
   color: white;
   background-color: cornflowerblue;
@@ -673,5 +673,95 @@ form input {
 /* line 580, ../sass/screen.scss */
 footer {
   background-image: url("../img/bg-4.jpg");
-  height: 400px;
+  background-repeat: repeat-y;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+/* line 590, ../sass/screen.scss */
+footer div {
+  width: 30%;
+}
+/* line 594, ../sass/screen.scss */
+footer article {
+  margin-top: 9.2rem;
+}
+/* line 596, ../sass/screen.scss */
+footer article #logo {
+  position: relative;
+  margin-left: 60px;
+  bottom: 45px;
+  text-transform: none;
+  font-size: 3.0rem;
+  font-family: "Roboto", sans-serif;
+  color: #2497A3;
+  margin-top: 36px;
+}
+/* line 607, ../sass/screen.scss */
+footer article .logo2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+/* line 614, ../sass/screen.scss */
+footer article input {
+  height: 30px;
+  background-color: white;
+  color: #9d97af;
+  height: 45px;
+}
+/* line 622, ../sass/screen.scss */
+footer article button {
+  width: 71px;
+  height: 50px;
+  background-color: #a099b3;
+  color: #322955;
+  margin-left: 10px;
+  border: 0px;
+  position: relative;
+  top: 3px;
+  padding-left: 17px;
+}
+/* line 638, ../sass/screen.scss */
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  margin-bottom: 4.1rem;
+  margin-right: 30px;
+  max-width: 300px;
+}
+/* line 646, ../sass/screen.scss */
+footer img {
+  float: left;
+  display: block;
+  margin-right: 15px;
+  margin-top: -9px;
+}
+
+@media (max-width: 946px) {
+  /* line 656, ../sass/screen.scss */
+  footer {
+    flex-direction: column;
+    -webkit-flex-direction: row;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    padding-left: 4%;
+    padding-right: 10%;
+  }
+  /* line 668, ../sass/screen.scss */
+  footer p {
+    margin-bottom: 0px;
+  }
+  /* line 673, ../sass/screen.scss */
+  footer h2 {
+    margin-top: 0px;
+  }
 }
