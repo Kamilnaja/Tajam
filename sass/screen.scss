@@ -108,12 +108,14 @@ nav  {
 	color: $bluegreen; // zmienia kolor 
 }
 
+
+
 .open {
 	display: block;
 }
 .intro {
 	color: $white;
-	background: url("../img/bg-1.jpg") no-repeat ;
+	background: url("../img/bg-1.jpg") no-repeat center center fixed;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -199,7 +201,6 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	
 }
 
 .col-md-6 {
@@ -207,19 +208,14 @@ hr {
 	
 }
 .video {
-	background-color: red;
-	background-image: url("../img/nj.jpg");
-	background-repeat: no-repeat;
+	background: url("../img/nj.jpg") no-repeat center center;
 	height: 550px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	.center-video {
 		max-width: 50%;
-
 	.circle {
-
-	 
 	    width: 100px;
 	    height: 100px;
 	    border-radius: 50%;
@@ -319,48 +315,43 @@ hr {
 				margin-right: 15%;
 				}
     }
-.team {
-	text-align: center;
+.team-bg {
+	background: url("../img/bg-2.jpg") no-repeat center center local;
+		text-align: center;
+		//height: 600px;
 	h2{
 		font-family: $play;
 		font-weight: bold;
-	
 		color: $white;
 		text-transform: uppercase;
 		margin-top: 80px;
 		display: inline-block;
+
 	}
 	h3 {
 		font-size: 1.4rem;
 		margin: 20px;
 		color: #FFFFFF;
-		
-}
-}
+}}
 .team-wrap {
 		flex-direction: row;
 		flex-wrap: wrap;
 		display: flex;
 		justify-content: center;
 }
-.team-bg {
-		background: url("../img/bg-2.jpg") repeat-y;
-	
-		text-align: center;
-	.cta {
 
+	.cta {
 			color: $white;
 			font-size: 1.4rem;
 			text-align: center;
-			margin-top: 70px;
 
-	}
+	
 button {
 	margin-top: 30px;
 }
 }
 .team-member {//opakowanie na
-		width: 220px;
+			width: 220px;
 		height: 280px;
 		border: solid #a09fa9 1px;
 		margin-bottom: 10px;
@@ -388,7 +379,7 @@ button {
 			width: 220px;
 			height: 220px;
 		}
-}
+	}
 .btn {
 	padding: 15px;
 	border: 2px #00e0d0 solid;
@@ -399,13 +390,11 @@ button {
 	display: inline-block;
 	background-color: transparent;
 	margin: 2.0rem auto 7.0rem auto;
-
-&:hover {
-	border: 2px salmon solid;
-	color: salmon;
-	box-sizing: border-box;
-	cursor: pointer;
-
+		&:hover {
+			border: 2px salmon solid;
+			color: salmon;
+			box-sizing: border-box;
+			cursor: pointer;
 	}
 }
 .works {
@@ -452,8 +441,7 @@ button {
 	}
 }
 .testimonials {
-	background: url("../img/bg-3.jpg") repeat-Y;
-	background-position: center fixed;
+	background: url("../img/bg-3.jpg") no-repeat center center scroll;
 	text-align: center;
 	line-height: 30px;
 	color: $white;
@@ -539,23 +527,22 @@ form input {
 	text-align: center;
 	p {
 		line-height: 150px;
-font-family: $roboto;
+	font-family: $roboto;
 	}
 }
 
 footer {
-	background: url("../img/bg-4.jpg") repeat-y;
+	background: url("../img/bg-4.jpg") no-repeat center center local;
+
 	color: $white;
 	display: flex;
 	flex-wrap: nowrap; //zmienić na niskiej szerokści ekranu
 	justify-content: center;
 	align-items: flex-start;
 	flex-direction: row;
-	padding-bottom: 20px;
-
+	height: 50rem;
 	div {
 		width: 30%;
-
 	}
 	article {
 		margin-top: 9.2rem;
@@ -595,14 +582,11 @@ footer {
 			position: relative;
 			top: 3px;
 			padding-left: 17px;
-
-
-
 		}
 	}
 	
 	p {
-		margin-bottom: 4.1rem;
+	//	margin-bottom: 4.1rem;
 		margin-right: 30px;
 		max-width: 300px;
 	}	
