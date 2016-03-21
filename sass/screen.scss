@@ -20,7 +20,6 @@ html {
   box-sizing: inherit;
   }
 
-
 .box-shadow-menu { //menu hamb
   position: relative;
 	  &:before {
@@ -115,7 +114,7 @@ nav  {
 }
 .intro {
 	color: $white;
-	background: url("../img/bg-1.jpg") no-repeat center center fixed;
+	background: url("../img/bg-1.jpg") no-repeat center center;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -147,13 +146,14 @@ hr {
 .ourstory {
 	background-color: $white;
 	display: flex;
-	padding: 5.5rem 5% 0;
+	padding: 10.5rem 5% 0;
 
 	h2 {
 	
 		font-family: $play;
 		color: black;
 		margin: 0 auto;
+
 	}
 	p {
 		
@@ -316,9 +316,10 @@ hr {
 				}
     }
 .team-bg {
-	background: url("../img/bg-2.jpg") no-repeat center center local;
+	background: url("../img/bg-2.jpg") repeat-Y;
 		text-align: center;
-		//height: 600px;
+		padding-top: 3.5rem;
+	
 	h2{
 		font-family: $play;
 		font-weight: bold;
@@ -338,6 +339,7 @@ hr {
 		flex-wrap: wrap;
 		display: flex;
 		justify-content: center;
+
 }
 
 	.cta {
@@ -382,7 +384,7 @@ button {
 	}
 .btn {
 	padding: 15px;
-	border: 2px #00e0d0 solid;
+	border: 4px #00e0d0 solid;
 	border-radius: 2px;
 	font: bold 1.6rem Arial;
 	text-transform: uppercase;
@@ -391,7 +393,7 @@ button {
 	background-color: transparent;
 	margin: 2.0rem auto 7.0rem auto;
 		&:hover {
-			border: 2px salmon solid;
+			border: 4px salmon solid;
 			color: salmon;
 			box-sizing: border-box;
 			cursor: pointer;
@@ -400,11 +402,12 @@ button {
 .works {
 	text-align: center;
 }
+
 .works p{
 	font-family: $play;
 	font-size: 2.2rem;
 	font-weight: bold;
-	margin-top: 70px;
+	margin-top: 110px;
 	margin-bottom: 70px;
 	display: inline-block;
 }
@@ -441,12 +444,12 @@ button {
 	}
 }
 .testimonials {
-	background: url("../img/bg-3.jpg") no-repeat center center scroll;
+	background: url("../img/bg-3.jpg") repeat-Y center center scroll;
 	text-align: center;
 	line-height: 30px;
 	color: $white;
 	min-height: 400px;
-	box-sizing: content-box;
+	box-sizing: border-box;
 		.container{
 			padding-top: 80px;
 		}
@@ -465,6 +468,7 @@ button {
 			color: lighten($violet, 50%);
 			text-transform: uppercase;
 			font-size: 1.4rem;
+		
 
 
 		}
@@ -532,15 +536,14 @@ form input {
 }
 
 footer {
-	background: url("../img/bg-4.jpg") no-repeat center center local;
-
+	background: url("../img/bg-4.jpg") repeat-y center center local;
 	color: $white;
 	display: flex;
 	flex-wrap: nowrap; //zmienić na niskiej szerokści ekranu
 	justify-content: center;
 	align-items: flex-start;
 	flex-direction: row;
-	height: 50rem;
+	padding-bottom: 70px;
 	div {
 		width: 30%;
 	}
@@ -569,8 +572,6 @@ footer {
 			background-color: $white;
 			color: #9d97af; // zmienić tu kolor !!!!
 			height: 45px;
-
-
 		}
 		button{
 			width: 71px;
@@ -579,9 +580,14 @@ footer {
 			color: $violet;
 			margin-left: 10px;
 			border: 0px; 
-			position: relative;
-			top: 3px;
 			padding-left: 17px;
+			position: relative;
+			display: inline;
+			top: -45px;
+			left: 155px;
+
+
+	
 		}
 	}
 	
