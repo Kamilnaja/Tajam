@@ -225,14 +225,11 @@
 </main>
 <script>
 
-jQuery(document).ready(function(){
-	jQuery('.box-shadow-menu').click(function(e){
-		jQuery(this).toggleClass('open');
-		jQuery('nav ul').toggleClass('open');
-		e.preventDefault();
-	});
-});
 
+var box-shadow-menu = document.querySelector('.box-shadow-menu');
+box-shadow-menu.addEventListener('click', function(){
+	document.querySelector("nav ul").classList.toggle("open");
+}, false);
 
 </script>
 </body>
