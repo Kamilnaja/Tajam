@@ -20,20 +20,8 @@ html {
   box-sizing: inherit;
   }
 
-.box-shadow-menu { //menu hamb
-  position: relative;
-	  &:before {
-		  content: "";
-		  position: absolute;
-		  left: 0;
-		  top: 0.48em;
-		  width: 2em;
-		  height: 0.35em;
-		  background: $white;
-		  box-shadow: 
-		    0 0.6em 0 0 $white, //reguluje wielkość 
-		    0 1.2em 0 0 $white;
-	}
+.header-wrapper {
+	width: 900px;
 }
 html {
 	font-size: 62.5%;
@@ -52,10 +40,8 @@ body {
 		color: $white;
 		text-decoration: none;
 		text-transform: uppercase;
-	&:hover {
-			text-decoration: underline;
-		}
 	}
+
 	header {
 			width: 100%;
 			height: 76px;
@@ -63,51 +49,197 @@ body {
 			border-bottom: 4px solid $bluegreen;
 			z-index: 100;
 			background-color: $violet;
-			h1 { //logo strony tekstowe
-					position: relative;
-					margin-left: 60px;
-					bottom: 45px;
-					text-transform: none;
-					font: 3.0rem $roboto;
-					color: $bluegreen;
-				}
-			#logo { //logo obrazkowe
-				margin-top: 16px;
+			img { //logo obrazkowe
 				float: left;
-				height: 40px;
-				display: block;
-				background-image: url("img/logo.png")
+				display: inline;
+				margin-left: 30px;
+				margin-top: 10px;//reguluje wysokość menu
+				background-image: url("img/logo.png");
 				}
+			h1 {
+				font-size: 30px;
+				font-family: $roboto;
+				color: $bluegreen;
+				text-transform: lowercase;
+				margin-top: 10px;
+				margin-left: 10px;
+
 			}
+		}
+} 
+
+/*----- Toggle Button -----*/
+.toggle-nav {
+    display:none;
 }
 
-nav { //menu głowne
-	float: right;
-	padding: 20px;
-		}
-#menu-icon { //ukrywa menu 
-	display: none;
+
+/*----- Menu -----*/
+
+.menu li {
+		margin-right: 50px;
+    float:left;
+    list-style:none;
+    font-size:1.7rem;
 }
-a:hover#menu-icon {
-	background-color: #444;
-	border-radius: 4px 4px 0 0;
+ 
+.menu li:last-child {
+    margin-right:0px;
 }
-nav  {
-	ul {
-		list-style: none;
-		font-weight: 700;
-	}
+.menu a {
+    color:$white;
+    transition:color linear 0.15s;
+}
+ 
+.menu a:hover, .menu .current-item a {
+    text-decoration:none;
+    color:#66a992;
+}
+ 
+/*----- Search -----*/
+.search-form {
+    float:right;
+    display:inline-block;
+}
+ 
+.search-form input {
+    width:200px;
+    height:30px;
+    padding:0px 8px;
+    float:left;
+    border-radius:2px 0px 0px 2px;
+    font-size:13px;
+}
+ 
+.search-form button {
+    height:30px;
+    padding:0px 7px;
+    float:right;
+    border-radius:0px 2px 2px 0px;
+    background:#66a992;
+    font-size:13px;
+    font-weight:600;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.3);
+    color:#fff;
+}
+ 
+/*----- Responsive -----*/
+@media screen and (max-width: 1150px) {
+    .wrap {
+        width:100%;
+    }
+}
+ 
+@media screen and (max-width: 970px) {
+    .search-form input {
+        width:120px;
+    }
+}
+ 
+@media screen and (max-width: 860px) {
+   	header {
+   		padding-left: 0px;
+   	}
+   
+    .menu {
+        position:relative;
+        display:inline-block;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+    .menu ul.active {
+        display:none;
+    }
+    .menu ul {
+      	float: right;
+				margin-left: auto;
+				margin-right: auto;
+ 				width: 100%;
+      	text-align: center;
+        position:relative;
+        left:0px;
+   			padding-bottom: 20px;
+      	margin-top: -40px;
+        background:$violet;
+        display: inline-block;
+    }
+ 
+    .menu ul:after {
+        width:0px;
+        height:0px;
+        position:absolute;
+        top:0%;
+        margin-left: auto;
+        margin-right: auto;
+        content:'';
+        transform:translate(0%, -100%);
+        border-left:7px solid transparent;
+        border-right:7px solid transparent;
+        border-bottom:7px solid #303030;
+    }
+ 
+    .menu li {
+        margin:20px 0px 5px 0px;
+        float:none;
+        display:block;
+    }
+ 
+    .menu a {
+        display:block;
+        color: white;
+    }
+    //ustawienie przycisku
+    .toggle-nav {
+        padding:20px; // zmienia wielkośc buttona
+        float:right;
+        display:inline-block;
+        border-radius:3px;
+     
+        color:#777;
+        font-size:20px;
+        transition:color linear 0.15s;
+        position: relative;
+        top: -50px;
+    }
+ 
+    .toggle-nav:hover, .toggle-nav.active {
+        text-decoration:none;
+        color:#66a992;
+    }
+ 
+    .search-form {
+        margin:12px 0px 0px 20px;
+        float:left;
+    }
+ 
+    .search-form input {
+        box-shadow:-1px 1px 2px rgba(0,0,0,0.1);
+    }
+}
+
+
+		.page-logo {
+			margin-left: 50px;
+}
+	
+	
 	li {
-		display: inline-block;
 		float: left;
-		padding: 10px;
+
+		
 	}
-}
-	.current {
-		color: $bluegreen; // zmienia kolor 
-}
-.open {
-	display: block;
+	a {
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+nav ul {
+	margin-top: -30px;
+	margin-right: 30px;
+	float: right;
+
 }
 .intro {
 	color: $white;
@@ -121,7 +253,8 @@ nav  {
 		margin: 0 auto;
 		display: inline-block;
 		line-height: 3.9rem;
-		font-family: $play 3.2rem;;
+		font-family: $play;
+		font-size: 3.2rem;
 	 	}
 	 p {
 	 	line-height: 2.4rem;
@@ -129,10 +262,7 @@ nav  {
 		margin: 61px auto 0;
 
 	 }
-	button {
-		text-align: center;
-		margin-top: 30px;
-	}
+	
 }
 
 hr {
@@ -216,8 +346,8 @@ hr {
 	    width: 100px;
 	    height: 100px;
 	    border-radius: 50%;
-	    -moz-border-radius: 50%;
-	    -webkit-border-radius: 50%;
+	    
+
 	  	 border: solid white 5px;
 	  	 box-sizing: border-box;
 	  	 		&:hover {
@@ -257,9 +387,9 @@ hr {
 }
 @media (max-width: 700px){
 	.row {
-		display: -webkit-flex;
+
 		display: flex;
-		-webkit-flex-direction: column;
+
 		flex-direction: column;
 	}
 	.col-md-6 {
@@ -435,7 +565,7 @@ button {
 .container {
 	.inputs {
 		display: flex;
-		flex-wrap: row;
+		flex-wrap: wrap;
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
@@ -604,16 +734,11 @@ footer {
 
 @media (max-width: 946px) {
 		footer {
-		flex-direction: column;
-		-webkit-flex-direction: row;
-		display: -webkit-flex;
-		display: flex;
-		flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		padding-left: 4%;
-		padding-right: 10%;
-
-
+			flex-direction: column;
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: 4%;
+			padding-right: 10%;
 
 		p{
 		margin-bottom: 0px;
@@ -625,39 +750,4 @@ footer {
 
 		}
 	}
-}
-@media only screen and (max-width : 740px) {
-
-	header {
-		position: absolute;
-			}
-	#menu-icon {
-		display:inline-block;
-		bottom: 20px;
-		right: 20px;
-		width: 40px;
-		height: 40px;
-		position: absolute;
-	}
-	nav ul, nav:active ul { 
-		display: none;
-		position: absolute;
-		padding: 20px;
-		right: 0px;
-		top: 80px;
-		width: 100%;
-		background-color: $violet;
-	}
-	nav ul a {
-		color: $white;
-	}
-
-	nav li {
-		text-align: center;
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
-	}
-
-
 }
