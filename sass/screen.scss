@@ -1,7 +1,5 @@
 /*RESET*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
-
-
 $violet: #322955;
 $roboto: 'Roboto', sans-serif;
 $play: 'Playfair Display', serif;
@@ -10,25 +8,23 @@ $white: #FFFFFF;
 $bluegreen: #2497A3;
 /*wszystkie elementy mają border-box */
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
+	box-sizing: inherit;
+	box-sizing: inherit;
+	box-sizing: inherit;
   }
-
-.header-wrapper {
-	width: 900px;
-}
 html {
 	font-size: 62.5%;
 }
 p {
 	font: 1.6rem $roboto;
 	line-height: 2.4rem;
+}
+.header-wrapper {
+	padding-left: 8%;
+	padding-right: 8%;
 }
 h2 {
 	font: bold 2.2rem $play;
@@ -41,7 +37,6 @@ body {
 		text-decoration: none;
 		text-transform: uppercase;
 	}
-
 	header {
 			width: 100%;
 			height: 76px;
@@ -63,21 +58,16 @@ body {
 				text-transform: lowercase;
 				margin-top: 10px;
 				margin-left: 10px;
-
 			}
 		}
 } 
-
 /*----- Toggle Button -----*/
 .toggle-nav {
     display:none;
 }
-
-
 /*----- Menu -----*/
-
 .menu li {
-		margin-right: 50px;
+	margin-right: 50px;
     float:left;
     list-style:none;
     font-size:1.7rem;
@@ -217,8 +207,6 @@ body {
         box-shadow:-1px 1px 2px rgba(0,0,0,0.1);
     }
 }
-
-
 		.page-logo {
 			margin-left: 50px;
 }
@@ -226,7 +214,6 @@ body {
 	
 	li {
 		float: left;
-
 		
 	}
 	a {
@@ -234,12 +221,10 @@ body {
 			text-decoration: underline;
 		}
 	}
-
 nav ul {
 	margin-top: -30px;
 	margin-right: 30px;
 	float: right;
-
 }
 .intro {
 	color: $white;
@@ -260,34 +245,28 @@ nav ul {
 	 	line-height: 2.4rem;
 	 	max-width: 90rem;
 		margin: 61px auto 0;
-
 	 }
 	
 }
-
 hr {
 	width: 30%;
 	color: $bluegreen;
 }
-
 .ourstory {
 	background-color: $white;
 	display: flex;
 	padding: 10.5rem 5% 0;
-
 	h2 {
 	
 		font-family: $play;
 		color: black;
 		margin: 0 auto;
-
 	}
 	p {
 		
 		color: $grey;
 		margin-top: 20px;
 	}
-
 	img {
 		width: 50%;
 		height: auto;
@@ -309,19 +288,15 @@ hr {
 		max-width: 225px;
 		padding: 12px;
 		margin: 10px;
-
 	}
 		h2 {
 		font: bold 1.4rem $roboto ;
 		margin-bottom: 2.2rem;
-
 } 
  		p {
-
  	margin-bottom: 30px;
  }
 }
-
 .awesome-picture {
 	max-width: 220px;
 	max-height: 220px;
@@ -329,7 +304,6 @@ hr {
 	margin-right: auto;
 	display: block;
 }
-
 .col-md-6 {
 	width: 50%;
 	
@@ -347,13 +321,11 @@ hr {
 	    height: 100px;
 	    border-radius: 50%;
 	    
-
 	  	 border: solid white 5px;
 	  	 box-sizing: border-box;
 	  	 		&:hover {
 	  	 			
 					box-shadow: 3px 3px 1px black;
-
 	  	 		}
 	.video-triangle {
 		font-size: 60px;
@@ -373,7 +345,6 @@ hr {
 	h2{
 		font-family: $play;
 		font-weight: bold;
-
 		color: black;
 		text-transform: uppercase;
 		margin-top: 120px;
@@ -387,9 +358,7 @@ hr {
 }
 @media (max-width: 700px){
 	.row {
-
 		display: flex;
-
 		flex-direction: column;
 	}
 	.col-md-6 {
@@ -400,17 +369,13 @@ hr {
 #logo {
 	margin-left: 0;
 	}
-
 }
-
-
 @media only screen and (min-width : 320px) {
         .container {
 				margin-left: 5%;
 				margin-right: 5%;
 				}
     }
-
     /* Extra Small Devices, Phones */ 
     @media only screen and (min-width : 480px) {
 .container {
@@ -418,7 +383,6 @@ hr {
 				margin-right: 10%;
 				}
     }
-
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
 .container {
@@ -426,7 +390,6 @@ hr {
 				margin-right: 12%;
 				}
     }
-
     /* Medium Devices, Desktops */
     @media only screen and (min-width : 992px) {
 .container {
@@ -434,7 +397,6 @@ hr {
 				margin-right: 14%;
 				}
     }
-
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
 .container {
@@ -454,7 +416,6 @@ hr {
 		text-transform: uppercase;
 		margin-top: 80px;
 		display: inline-block;
-
 	}
 	h3 {
 		font-size: 1.4rem;
@@ -466,14 +427,11 @@ hr {
 		flex-wrap: wrap;
 		display: flex;
 		justify-content: center;
-
 }
-
 	.cta {
 			color: $white;
 			font-size: 1.4rem;
 			text-align: center;
-
 	
 button {
 	margin-top: 30px;
@@ -494,14 +452,12 @@ button {
 		text-transform: uppercase;
 		display: inline-block;
 		margin-top: 10px;
-
 	}
 	h3 {
 		color: #a09fa9;
 		font-family: $roboto;
 		font-size: 1.3rem;
 		margin-top: 10px;
-
 	}
 		.foto {
 			background-color: $white;
@@ -529,7 +485,6 @@ button {
 .works {
 	text-align: center;
 }
-
 .works p{
 	font-family: $play;
 	font-size: 2.2rem;
@@ -542,7 +497,6 @@ button {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
 	.image {
 		width: 270px;
 		height: 200px;
@@ -560,7 +514,6 @@ button {
 		width: 270px;
 		height: 200px;
 		margin: 5px;
-
 }
 .container {
 	.inputs {
@@ -589,32 +542,21 @@ button {
 			text-transform: uppercase;
 			margin-bottom: 30px;
 			font-size: 2.2rem;
-
 		}
 		h3 {
 			color: lighten($violet, 50%);
 			text-transform: uppercase;
 			font-size: 1.4rem;
 		
-
-
 		}
 }
-
 .inputs
 {
-
-
-
 	h2 {
-
 		margin-top: 40px;
 		margin-bottom: 40px;
 	}
 }
-
-
-
 @media (max-width: 901px){
 	.inputs {
 		flex-direction: column; }//zmienia wyświetlanie kolumny i formularza
@@ -625,27 +567,20 @@ button {
 	
 	
 }
-
 input#text-area {
 height: 200px;
-
 }
 form input {
 	margin-top: 20px;
 	height: 30px;
-
 	max-width: 270px;
 }
-
 .clients {
 	font-size: 1.7rem;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-
-
 }
-
 .clients div {
 	color: $white;
 	background-color: cornflowerblue;
@@ -661,7 +596,6 @@ form input {
 	font-family: $roboto;
 	}
 }
-
 footer {
 	background: url("../img/bg-4.jpg") repeat-y center center local;
 	color: $white;
@@ -712,8 +646,6 @@ footer {
 			display: inline;
 			top: -45px;
 			left: 155px;
-
-
 	
 		}
 	}
@@ -731,7 +663,6 @@ footer {
 		
 	}
 }
-
 @media (max-width: 946px) {
 		footer {
 			flex-direction: column;
@@ -739,15 +670,12 @@ footer {
 			flex-wrap: wrap;
 			padding-left: 4%;
 			padding-right: 10%;
-
 		p{
 		margin-bottom: 0px;
-
 	
 		}
 		h2 {
 			margin-top: 0px;
-
 		}
 	}
 }
