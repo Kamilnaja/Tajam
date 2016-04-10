@@ -6,7 +6,6 @@ $play: 'Playfair Display', serif;
 $grey: #413d4b;
 $white: #FFFFFF;
 $bluegreen: #2497A3;
-/*wszystkie elementy mają border-box */
 html {
   box-sizing: border-box;
 }
@@ -232,7 +231,7 @@ nav ul {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	padding: 120px 5% 0;
+	padding: 120px 8% 0;
 	
  	h2 {
 		margin: 0 auto;
@@ -255,9 +254,8 @@ hr {
 .ourstory {
 	background-color: $white;
 	display: flex;
-	padding: 10.5rem 5% 0;
+	padding: 10.5rem 8% 0;
 	h2 {
-	
 		font-family: $play;
 		color: black;
 		margin: 0 auto;
@@ -564,8 +562,6 @@ button {
 		flex-direction: row;
 		display: flex;
 	}
-	
-	
 }
 input#text-area {
 height: 200px;
@@ -581,7 +577,7 @@ form input {
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-.clients div {
+.clients figure {
 	color: $white;
 	background-color: cornflowerblue;
 	width: 200px;
