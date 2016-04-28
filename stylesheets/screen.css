@@ -60,41 +60,39 @@ html {
 /* line 12, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: inherit;
-  box-sizing: inherit;
-  box-sizing: inherit;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 p {
   font: 1.6rem "Roboto", sans-serif;
   line-height: 2.4rem;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 .header-wrapper {
-  padding-left: 8%;
-  padding-right: 8%;
+  padding: 0 8%;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 h2 {
   font: bold 2.2rem "Playfair Display", serif;
 }
 
-/* line 33, ../sass/screen.scss */
-body a {
+/* line 28, ../sass/screen.scss */
+a {
   font-size: 1.5rem;
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 39, ../sass/screen.scss */
-body header {
+
+/* line 34, ../sass/screen.scss */
+header {
   width: 100%;
   height: 76px;
   position: fixed;
@@ -102,32 +100,29 @@ body header {
   z-index: 100;
   background-color: #322955;
 }
-/* line 46, ../sass/screen.scss */
-body header img {
+/* line 41, ../sass/screen.scss */
+header img {
   float: left;
   display: inline;
-  margin-left: 30px;
-  margin-top: 10px;
+  margin: 10px 0 0 30px;
   background-image: url("img/logo.png");
 }
-/* line 53, ../sass/screen.scss */
-body header h1 {
-  font-size: 30px;
-  font-family: "Roboto", sans-serif;
+/* line 47, ../sass/screen.scss */
+header h1 {
+  font: bold 3rem "Roboto", sans-serif;
   color: #2497A3;
   text-transform: lowercase;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 10px 0 0 10px;
 }
 
 /*----- Toggle Button -----*/
-/* line 64, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .toggle-nav {
   display: none;
 }
 
 /*----- Menu -----*/
-/* line 68, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .menu li {
   margin-right: 50px;
   float: left;
@@ -135,107 +130,630 @@ body header h1 {
   font-size: 1.7rem;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .menu li:last-child {
   margin-right: 0px;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .menu a {
   color: #FFFFFF;
   transition: color linear 0.15s;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .menu a:hover, .menu .current-item a {
   text-decoration: none;
   color: #66a992;
 }
 
 /*----- Search -----*/
-/* line 89, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .search-form {
   float: right;
   display: inline-block;
 }
 
-/* line 94, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .search-form input {
   width: 200px;
   height: 30px;
-  padding: 0px 8px;
+  padding: 0 8px;
   float: left;
-  border-radius: 2px 0px 0px 2px;
+  border-radius: 2px 0 0 2px;
   font-size: 13px;
 }
 
-/* line 103, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .search-form button {
   height: 30px;
-  padding: 0px 7px;
+  padding: 0 7px;
   float: right;
-  border-radius: 0px 2px 2px 0px;
+  border-radius: 0 2px 2px 0;
   background: #66a992;
   font-size: 13px;
   font-weight: 600;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
-  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+  color: #FFFFFF;
 }
 
-/*----- Responsive -----*/
+/* line 104, ../sass/screen.scss */
+.page-logo {
+  margin-left: 50px;
+}
+
+/* line 107, ../sass/screen.scss */
+li {
+  float: left;
+}
+
+/* line 111, ../sass/screen.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 115, ../sass/screen.scss */
+nav ul {
+  margin: -30px 30px 0 0;
+  float: right;
+}
+
+/* line 119, ../sass/screen.scss */
+.intro {
+  color: #FFFFFF;
+  background: url("../img/bg-1.jpg") no-repeat center center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 120px 8% 0;
+}
+/* line 126, ../sass/screen.scss */
+.intro h2 {
+  margin: 0 auto;
+  display: inline-block;
+  line-height: 3.9rem;
+  font: 3.2rem "Playfair Display", serif;
+}
+/* line 132, ../sass/screen.scss */
+.intro p {
+  line-height: 2.4rem;
+  max-width: 90rem;
+  margin: 61px auto 0;
+}
+
+/* line 138, ../sass/screen.scss */
+hr {
+  width: 30%;
+  color: #2497A3;
+}
+
+/* line 142, ../sass/screen.scss */
+.ourstory {
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 10.5rem 8% 0;
+}
+/* line 146, ../sass/screen.scss */
+.ourstory h2 {
+  font-family: "Playfair Display", serif;
+  color: black;
+  margin: 0 auto;
+}
+/* line 151, ../sass/screen.scss */
+.ourstory p {
+  color: #413d4b;
+  margin-top: 20px;
+}
+/* line 155, ../sass/screen.scss */
+.ourstory img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+/* line 161, ../sass/screen.scss */
+.whatwedo {
+  margin-bottom: 30px;
+  box-sizing: content-box;
+  display: flex;
+  flex: row wrap;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
+}
+/* line 169, ../sass/screen.scss */
+.whatwedo article {
+  border: solid 2px lightblue;
+  max-width: 225px;
+  padding: 12px;
+  margin: 10px;
+}
+/* line 175, ../sass/screen.scss */
+.whatwedo h2 {
+  font: bold 1.4rem "Roboto", sans-serif;
+  margin-bottom: 2.2rem;
+}
+/* line 179, ../sass/screen.scss */
+.whatwedo p {
+  margin-bottom: 30px;
+}
+
+/* line 183, ../sass/screen.scss */
+.awesome-picture {
+  max-width: 220px;
+  max-height: 220px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 189, ../sass/screen.scss */
+.col-md-6 {
+  width: 50%;
+}
+
+/* line 192, ../sass/screen.scss */
+.video {
+  background: url("../img/nj.jpg") no-repeat center center;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 198, ../sass/screen.scss */
+.video .center-video {
+  max-width: 50%;
+}
+/* line 200, ../sass/screen.scss */
+.video .center-video .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid white 5px;
+  box-sizing: border-box;
+}
+/* line 206, ../sass/screen.scss */
+.video .center-video .circle:hover {
+  box-shadow: 3px 3px 1px black;
+}
+/* line 209, ../sass/screen.scss */
+.video .center-video .circle .video-triangle {
+  font-size: 60px;
+  color: #FFFFFF;
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+/* line 215, ../sass/screen.scss */
+.video .center-video .circle .video-triangle:hover {
+  color: salmon;
+}
+
+/* line 222, ../sass/screen.scss */
+.expertise {
+  text-align: center;
+}
+/* line 224, ../sass/screen.scss */
+.expertise h2 {
+  font: bold "Playfair Display", serif;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 120px;
+  display: inline-block;
+}
+/* line 231, ../sass/screen.scss */
+.expertise h3 {
+  font-size: 1.4rem;
+  margin: 20px;
+  color: #463a77;
+}
+
+@media (max-width: 700px) {
+  /* line 238, ../sass/screen.scss */
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* line 242, ../sass/screen.scss */
+  .col-md-6 {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  /* line 247, ../sass/screen.scss */
+  #logo {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 320px) {
+  /* line 252, ../sass/screen.scss */
+  .container {
+    margin: 0 5%;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /* line 258, ../sass/screen.scss */
+  .container {
+    margin: 0 10%;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /* line 264, ../sass/screen.scss */
+  .container {
+    margin: 0 12%;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /* line 270, ../sass/screen.scss */
+  .container {
+    margin: 0 14%;
+  }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /* line 276, ../sass/screen.scss */
+  .container {
+    margin: 0 15%;
+  }
+}
+/* line 280, ../sass/screen.scss */
+.team-bg {
+  background: url("../img/bg-2.jpg") repeat-Y;
+  text-align: center;
+  padding-top: 3.5rem;
+}
+/* line 285, ../sass/screen.scss */
+.team-bg h2 {
+  font: bold "Playfair Display", serif;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 80px;
+  display: inline-block;
+}
+/* line 292, ../sass/screen.scss */
+.team-bg h3 {
+  font-size: 1.4rem;
+  margin: 20px;
+  color: #FFFFFF;
+}
+
+/* line 298, ../sass/screen.scss */
+.team-wrap {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 304, ../sass/screen.scss */
+.cta {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  text-align: center;
+}
+/* line 309, ../sass/screen.scss */
+.cta button {
+  margin-top: 30px;
+}
+
+/* line 313, ../sass/screen.scss */
+.team-member {
+  width: 220px;
+  height: 280px;
+  border: solid #a09fa9 1px;
+  margin: 10px;
+  text-align: center;
+}
+/* line 320, ../sass/screen.scss */
+.team-member h2 {
+  color: #FFFFFF;
+  font: bold 1.4rem "Roboto", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 10px;
+}
+/* line 327, ../sass/screen.scss */
+.team-member h3 {
+  color: #a09fa9;
+  font: 1.3rem "Roboto", sans-serif;
+  margin-top: 10px;
+}
+/* line 332, ../sass/screen.scss */
+.team-member .foto {
+  background-color: #FFFFFF;
+  width: 220px;
+  height: 220px;
+}
+
+/* line 338, ../sass/screen.scss */
+.btn {
+  padding: 15px;
+  border: 4px #00e0d0 solid;
+  border-radius: 2px;
+  font: bold 1.6rem Arial;
+  text-transform: uppercase;
+  color: #2497A3;
+  display: inline-block;
+  background-color: transparent;
+  margin: 2.0rem auto 7.0rem auto;
+}
+/* line 348, ../sass/screen.scss */
+.btn:hover {
+  border: 4px salmon solid;
+  color: salmon;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* line 355, ../sass/screen.scss */
+.works {
+  text-align: center;
+}
+
+/* line 358, ../sass/screen.scss */
+.works p {
+  font: bold 2.2rem "Playfair Display", serif;
+  margin: 110px 0 70px 0;
+  display: inline-block;
+}
+
+/* line 363, ../sass/screen.scss */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* line 367, ../sass/screen.scss */
+.gallery .image {
+  width: 270px;
+  height: 200px;
+  background-color: salmon;
+  margin: 5px;
+}
+/* line 373, ../sass/screen.scss */
+.gallery .image2 {
+  background-color: lightblue;
+  width: 270px;
+  height: 200px;
+  margin: 5px;
+}
+
+/* line 379, ../sass/screen.scss */
+.image3 {
+  background-color: green;
+  width: 270px;
+  height: 200px;
+  margin: 5px;
+}
+
+/* line 386, ../sass/screen.scss */
+.container .inputs {
+  flex-flow: row wrap;
+  display: flex;
+}
+
+/* line 391, ../sass/screen.scss */
+.testimonials {
+  background: url("../img/bg-3.jpg") repeat-Y center center scroll;
+  text-align: center;
+  line-height: 30px;
+  color: #FFFFFF;
+  min-height: 400px;
+  box-sizing: border-box;
+}
+/* line 398, ../sass/screen.scss */
+.testimonials .container {
+  padding-top: 80px;
+}
+/* line 401, ../sass/screen.scss */
+.testimonials p {
+  margin-bottom: 4.0rem;
+}
+/* line 404, ../sass/screen.scss */
+.testimonials h2 {
+  font: 2.2rem "Playfair Display", serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+/* line 409, ../sass/screen.scss */
+.testimonials h3 {
+  color: #b1a8d5;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+/* line 417, ../sass/screen.scss */
+.inputs h2 {
+  margin: 40px 0;
+}
+
+@media (max-width: 901px) {
+  /* line 422, ../sass/screen.scss */
+  .inputs {
+    flex-direction: column;
+  }
+
+  /* line 425, ../sass/screen.scss */
+  .clients {
+    flex-direction: row;
+    display: flex;
+  }
+}
+/* line 430, ../sass/screen.scss */
+input#text-area {
+  height: 200px;
+}
+
+/* line 433, ../sass/screen.scss */
+form input {
+  margin-top: 20px;
+  height: 30px;
+  max-width: 270px;
+}
+
+/* line 438, ../sass/screen.scss */
+.clients {
+  font-size: 1.7rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* line 443, ../sass/screen.scss */
+.clients figure {
+  color: #FFFFFF;
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 150px;
+  font-size: 2.0rem;
+  box-sizing: border-box;
+  margin: 10px;
+  line-height: 150px;
+  text-align: center;
+}
+/* line 453, ../sass/screen.scss */
+.clients figure p {
+  line-height: 150px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* line 458, ../sass/screen.scss */
+footer {
+  background: url("../img/bg-4.jpg") repeat-y center center local;
+  color: #FFFFFF;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 70px;
+}
+/* line 466, ../sass/screen.scss */
+footer div {
+  width: 30%;
+}
+/* line 469, ../sass/screen.scss */
+footer article {
+  margin-top: 9.2rem;
+}
+/* line 471, ../sass/screen.scss */
+footer article #logo {
+  position: relative;
+  bottom: 45px;
+  text-transform: none;
+  font: 3rem "Roboto", sans-serif;
+  margin: 36px 0 60px 0;
+  color: #2497A3;
+}
+/* line 480, ../sass/screen.scss */
+footer article .logo2 {
+  font: 1.5rem "Roboto", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+/* line 486, ../sass/screen.scss */
+footer article input {
+  height: 30px;
+  background-color: #FFFFFF;
+  color: #9d97af;
+  height: 45px;
+}
+/* line 492, ../sass/screen.scss */
+footer article button {
+  width: 71px;
+  height: 45px;
+  background-color: #a099b3;
+  color: #322955;
+  margin-left: 10px;
+  border: 0;
+  padding-left: 17px;
+  position: relative;
+  display: inline;
+  top: -45px;
+  left: 155px;
+}
+/* line 507, ../sass/screen.scss */
+footer p {
+  margin-right: 30px;
+  max-width: 300px;
+}
+/* line 511, ../sass/screen.scss */
+footer img {
+  float: left;
+  display: block;
+  margin: -9px 15px 0 0;
+}
+
+@media (max-width: 946px) {
+  /* line 518, ../sass/screen.scss */
+  footer {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4% 0 10%;
+  }
+  /* line 523, ../sass/screen.scss */
+  footer p {
+    margin-bottom: 0;
+  }
+  /* line 526, ../sass/screen.scss */
+  footer h2 {
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 1150px) {
-  /* line 117, ../sass/screen.scss */
+  /* line 532, ../sass/screen.scss */
   .wrap {
     width: 100%;
   }
 }
 @media screen and (max-width: 970px) {
-  /* line 123, ../sass/screen.scss */
+  /* line 538, ../sass/screen.scss */
   .search-form input {
     width: 120px;
   }
 }
 @media screen and (max-width: 860px) {
-  /* line 129, ../sass/screen.scss */
+  /* line 543, ../sass/screen.scss */
   header {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
-  /* line 133, ../sass/screen.scss */
+  /* line 547, ../sass/screen.scss */
   .menu {
     position: relative;
     display: inline-block;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
     width: 100%;
   }
 
-  /* line 140, ../sass/screen.scss */
+  /* line 554, ../sass/screen.scss */
   .menu ul.active {
     display: none;
   }
 
-  /* line 143, ../sass/screen.scss */
+  /* line 557, ../sass/screen.scss */
   .menu ul {
     float: right;
-    margin-left: auto;
-    margin-right: auto;
+    margin: -40px auto 0 auto;
     width: 100%;
     text-align: center;
     position: relative;
-    left: 0px;
+    left: 0;
     padding-bottom: 20px;
-    margin-top: -40px;
     background: #322955;
     display: inline-block;
   }
 
-  /* line 157, ../sass/screen.scss */
+  /* line 569, ../sass/screen.scss */
   .menu ul:after {
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     position: absolute;
-    top: 0%;
+    top: 0;
     margin-left: auto;
     margin-right: auto;
     content: '';
@@ -245,20 +763,20 @@ body header h1 {
     border-bottom: 7px solid #303030;
   }
 
-  /* line 171, ../sass/screen.scss */
+  /* line 583, ../sass/screen.scss */
   .menu li {
-    margin: 20px 0px 5px 0px;
+    margin: 20px 0 5px 0;
     float: none;
     display: block;
   }
 
-  /* line 177, ../sass/screen.scss */
+  /* line 588, ../sass/screen.scss */
   .menu a {
     display: block;
     color: white;
   }
 
-  /* line 182, ../sass/screen.scss */
+  /* line 593, ../sass/screen.scss */
   .toggle-nav {
     padding: 20px;
     float: right;
@@ -271,576 +789,20 @@ body header h1 {
     top: -50px;
   }
 
-  /* line 195, ../sass/screen.scss */
+  /* line 605, ../sass/screen.scss */
   .toggle-nav:hover, .toggle-nav.active {
     text-decoration: none;
     color: #66a992;
   }
 
-  /* line 200, ../sass/screen.scss */
+  /* line 610, ../sass/screen.scss */
   .search-form {
-    margin: 12px 0px 0px 20px;
+    margin: 12px 0 0 20px;
     float: left;
   }
 
-  /* line 205, ../sass/screen.scss */
+  /* line 615, ../sass/screen.scss */
   .search-form input {
     box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.1);
-  }
-}
-/* line 209, ../sass/screen.scss */
-.page-logo {
-  margin-left: 50px;
-}
-
-/* line 214, ../sass/screen.scss */
-li {
-  float: left;
-}
-
-/* line 219, ../sass/screen.scss */
-a:hover {
-  text-decoration: underline;
-}
-
-/* line 223, ../sass/screen.scss */
-nav ul {
-  margin-top: -30px;
-  margin-right: 30px;
-  float: right;
-}
-
-/* line 228, ../sass/screen.scss */
-.intro {
-  color: #FFFFFF;
-  background: url("../img/bg-1.jpg") no-repeat center center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 120px 8% 0;
-}
-/* line 236, ../sass/screen.scss */
-.intro h2 {
-  margin: 0 auto;
-  display: inline-block;
-  line-height: 3.9rem;
-  font-family: "Playfair Display", serif;
-  font-size: 3.2rem;
-}
-/* line 243, ../sass/screen.scss */
-.intro p {
-  line-height: 2.4rem;
-  max-width: 90rem;
-  margin: 61px auto 0;
-}
-
-/* line 250, ../sass/screen.scss */
-hr {
-  width: 30%;
-  color: #2497A3;
-}
-
-/* line 254, ../sass/screen.scss */
-.ourstory {
-  background-color: #FFFFFF;
-  display: flex;
-  padding: 10.5rem 8% 0;
-}
-/* line 258, ../sass/screen.scss */
-.ourstory h2 {
-  font-family: "Playfair Display", serif;
-  color: black;
-  margin: 0 auto;
-}
-/* line 263, ../sass/screen.scss */
-.ourstory p {
-  color: #413d4b;
-  margin-top: 20px;
-}
-/* line 268, ../sass/screen.scss */
-.ourstory img {
-  width: 50%;
-  height: auto;
-  margin-bottom: 40px;
-}
-
-/* line 275, ../sass/screen.scss */
-.whatwedo {
-  margin-bottom: 30px;
-  box-sizing: content-box;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
-  text-align: center;
-}
-/* line 284, ../sass/screen.scss */
-.whatwedo article {
-  border: solid 2px lightblue;
-  max-width: 225px;
-  padding: 12px;
-  margin: 10px;
-}
-/* line 290, ../sass/screen.scss */
-.whatwedo h2 {
-  font: bold 1.4rem "Roboto", sans-serif;
-  margin-bottom: 2.2rem;
-}
-/* line 294, ../sass/screen.scss */
-.whatwedo p {
-  margin-bottom: 30px;
-}
-
-/* line 298, ../sass/screen.scss */
-.awesome-picture {
-  max-width: 220px;
-  max-height: 220px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-/* line 305, ../sass/screen.scss */
-.col-md-6 {
-  width: 50%;
-}
-
-/* line 309, ../sass/screen.scss */
-.video {
-  background: url("../img/nj.jpg") no-repeat center center;
-  height: 550px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* line 315, ../sass/screen.scss */
-.video .center-video {
-  max-width: 50%;
-}
-/* line 317, ../sass/screen.scss */
-.video .center-video .circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: solid white 5px;
-  box-sizing: border-box;
-}
-/* line 324, ../sass/screen.scss */
-.video .center-video .circle:hover {
-  box-shadow: 3px 3px 1px black;
-}
-/* line 328, ../sass/screen.scss */
-.video .center-video .circle .video-triangle {
-  font-size: 60px;
-  color: #FFFFFF;
-  position: relative;
-  top: 15px;
-  left: 20px;
-}
-/* line 334, ../sass/screen.scss */
-.video .center-video .circle .video-triangle:hover {
-  color: salmon;
-}
-
-/* line 341, ../sass/screen.scss */
-.expertise {
-  text-align: center;
-}
-/* line 343, ../sass/screen.scss */
-.expertise h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  color: black;
-  text-transform: uppercase;
-  margin-top: 120px;
-  display: inline-block;
-}
-/* line 351, ../sass/screen.scss */
-.expertise h3 {
-  font-size: 1.4rem;
-  margin: 20px;
-  color: #463a77;
-}
-
-@media (max-width: 700px) {
-  /* line 358, ../sass/screen.scss */
-  .row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* line 362, ../sass/screen.scss */
-  .col-md-6 {
-    width: 100%;
-  }
-}
-@media (max-width: 900px) {
-  /* line 367, ../sass/screen.scss */
-  #logo {
-    margin-left: 0;
-  }
-}
-@media only screen and (min-width: 320px) {
-  /* line 372, ../sass/screen.scss */
-  .container {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /* line 379, ../sass/screen.scss */
-  .container {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /* line 386, ../sass/screen.scss */
-  .container {
-    margin-left: 12%;
-    margin-right: 12%;
-  }
-}
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /* line 393, ../sass/screen.scss */
-  .container {
-    margin-left: 14%;
-    margin-right: 14%;
-  }
-}
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /* line 400, ../sass/screen.scss */
-  .container {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-}
-/* line 405, ../sass/screen.scss */
-.team-bg {
-  background: url("../img/bg-2.jpg") repeat-Y;
-  text-align: center;
-  padding-top: 3.5rem;
-}
-/* line 410, ../sass/screen.scss */
-.team-bg h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  margin-top: 80px;
-  display: inline-block;
-}
-/* line 418, ../sass/screen.scss */
-.team-bg h3 {
-  font-size: 1.4rem;
-  margin: 20px;
-  color: #FFFFFF;
-}
-
-/* line 423, ../sass/screen.scss */
-.team-wrap {
-  flex-direction: row;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
-}
-
-/* line 429, ../sass/screen.scss */
-.cta {
-  color: #FFFFFF;
-  font-size: 1.4rem;
-  text-align: center;
-}
-/* line 434, ../sass/screen.scss */
-.cta button {
-  margin-top: 30px;
-}
-
-/* line 438, ../sass/screen.scss */
-.team-member {
-  width: 220px;
-  height: 280px;
-  border: solid #a09fa9 1px;
-  margin-bottom: 10px;
-  margin: 10px;
-  text-align: center;
-}
-/* line 445, ../sass/screen.scss */
-.team-member h2 {
-  color: #FFFFFF;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-top: 10px;
-}
-/* line 454, ../sass/screen.scss */
-.team-member h3 {
-  color: #a09fa9;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
-  margin-top: 10px;
-}
-/* line 460, ../sass/screen.scss */
-.team-member .foto {
-  background-color: #FFFFFF;
-  width: 220px;
-  height: 220px;
-}
-
-/* line 466, ../sass/screen.scss */
-.btn {
-  padding: 15px;
-  border: 4px #00e0d0 solid;
-  border-radius: 2px;
-  font: bold 1.6rem Arial;
-  text-transform: uppercase;
-  color: #2497A3;
-  display: inline-block;
-  background-color: transparent;
-  margin: 2.0rem auto 7.0rem auto;
-}
-/* line 476, ../sass/screen.scss */
-.btn:hover {
-  border: 4px salmon solid;
-  color: salmon;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-/* line 483, ../sass/screen.scss */
-.works {
-  text-align: center;
-}
-
-/* line 486, ../sass/screen.scss */
-.works p {
-  font-family: "Playfair Display", serif;
-  font-size: 2.2rem;
-  font-weight: bold;
-  margin-top: 110px;
-  margin-bottom: 70px;
-  display: inline-block;
-}
-
-/* line 494, ../sass/screen.scss */
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-/* line 498, ../sass/screen.scss */
-.gallery .image {
-  width: 270px;
-  height: 200px;
-  background-color: salmon;
-  margin: 5px;
-}
-/* line 504, ../sass/screen.scss */
-.gallery .image2 {
-  background-color: lightblue;
-  width: 270px;
-  height: 200px;
-  margin: 5px;
-}
-
-/* line 510, ../sass/screen.scss */
-.image3 {
-  background-color: green;
-  width: 270px;
-  height: 200px;
-  margin: 5px;
-}
-
-/* line 517, ../sass/screen.scss */
-.container .inputs {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-/* line 524, ../sass/screen.scss */
-.testimonials {
-  background: url("../img/bg-3.jpg") repeat-Y center center scroll;
-  text-align: center;
-  line-height: 30px;
-  color: #FFFFFF;
-  min-height: 400px;
-  box-sizing: border-box;
-}
-/* line 531, ../sass/screen.scss */
-.testimonials .container {
-  padding-top: 80px;
-}
-/* line 534, ../sass/screen.scss */
-.testimonials p {
-  margin-bottom: 4.0rem;
-}
-/* line 537, ../sass/screen.scss */
-.testimonials h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  font-size: 2.2rem;
-}
-/* line 544, ../sass/screen.scss */
-.testimonials h3 {
-  color: #b1a8d5;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-}
-
-/* line 553, ../sass/screen.scss */
-.inputs h2 {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 901px) {
-  /* line 559, ../sass/screen.scss */
-  .inputs {
-    flex-direction: column;
-  }
-
-  /* line 561, ../sass/screen.scss */
-  .clients {
-    flex-direction: row;
-    display: flex;
-  }
-}
-/* line 566, ../sass/screen.scss */
-input#text-area {
-  height: 200px;
-}
-
-/* line 569, ../sass/screen.scss */
-form input {
-  margin-top: 20px;
-  height: 30px;
-  max-width: 270px;
-}
-
-/* line 574, ../sass/screen.scss */
-.clients {
-  font-size: 1.7rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-/* line 580, ../sass/screen.scss */
-.clients figure {
-  color: #FFFFFF;
-  background-color: cornflowerblue;
-  width: 200px;
-  height: 150px;
-  font-size: 2.0rem;
-  box-sizing: border-box;
-  margin: 10px;
-  line-height: 150px;
-  text-align: center;
-}
-/* line 590, ../sass/screen.scss */
-.clients figure p {
-  line-height: 150px;
-  font-family: "Roboto", sans-serif;
-}
-
-/* line 595, ../sass/screen.scss */
-footer {
-  background: url("../img/bg-4.jpg") repeat-y center center local;
-  color: #FFFFFF;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: row;
-  padding-bottom: 70px;
-}
-/* line 604, ../sass/screen.scss */
-footer div {
-  width: 30%;
-}
-/* line 607, ../sass/screen.scss */
-footer article {
-  margin-top: 9.2rem;
-}
-/* line 609, ../sass/screen.scss */
-footer article #logo {
-  position: relative;
-  margin-left: 60px;
-  bottom: 45px;
-  text-transform: none;
-  font-size: 3.0rem;
-  font-family: "Roboto", sans-serif;
-  color: #2497A3;
-  margin-top: 36px;
-}
-/* line 620, ../sass/screen.scss */
-footer article .logo2 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-/* line 627, ../sass/screen.scss */
-footer article input {
-  height: 30px;
-  background-color: #FFFFFF;
-  color: #9d97af;
-  height: 45px;
-}
-/* line 633, ../sass/screen.scss */
-footer article button {
-  width: 71px;
-  height: 45px;
-  background-color: #a099b3;
-  color: #322955;
-  margin-left: 10px;
-  border: 0px;
-  padding-left: 17px;
-  position: relative;
-  display: inline;
-  top: -45px;
-  left: 155px;
-}
-/* line 649, ../sass/screen.scss */
-footer p {
-  margin-right: 30px;
-  max-width: 300px;
-}
-/* line 654, ../sass/screen.scss */
-footer img {
-  float: left;
-  display: block;
-  margin-right: 15px;
-  margin-top: -9px;
-}
-
-@media (max-width: 946px) {
-  /* line 663, ../sass/screen.scss */
-  footer {
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 4%;
-    padding-right: 10%;
-  }
-  /* line 669, ../sass/screen.scss */
-  footer p {
-    margin-bottom: 0px;
-  }
-  /* line 673, ../sass/screen.scss */
-  footer h2 {
-    margin-top: 0px;
   }
 }
