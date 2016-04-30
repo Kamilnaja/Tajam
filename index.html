@@ -7,7 +7,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
 </head>
-<body>
+<body onload="loadMore()">
 	<header>
 		<div class="header-wrapper">
 			<a href="#" class="page-logo"><img src="img/logo.png" alt="logo"><h1>tajam</h1></a>
@@ -28,7 +28,7 @@
 			<h2>We Are Awesome Creative Agency </h2>
 			<hr>
 			<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-			<button class="btn"> Load more </button>
+			<button class="btn" id="more"> Load more </button>
 		</article>
 		<article class="ourstory row" id="ourstory">
 			<div class="col-md-6"	>
@@ -132,9 +132,8 @@
 									<div class="works" id="works">
 										<p>Our works</p>
 										<section class="gallery" id="gallery">
-						
 										</section>
-										<button class="btn"> Load more </button>
+										<button class="btn" id="load-more"> Load more </button>
 									</div>
 
 
@@ -207,8 +206,9 @@
 // }
 
 //pobranie danych z Json 
-$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
-      tags: "herbs ",
+function loadMore(){
+	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
+      tags: "herbs",
       tagmode: "all",
       format: "json"
 }, function(data){
@@ -227,6 +227,12 @@ $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?
  });
 });
 
-										</script>
-									</body>
-									</html>
+}
+//po wciśnięciu przycisku ładuje się więcej fotek
+var element = document.getElementById('load-more');
+element.onclick = loadMore;
+
+
+		</script>
+	</body>
+</html> 
