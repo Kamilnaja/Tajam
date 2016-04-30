@@ -162,7 +162,7 @@ header {
 			margin-bottom: 30px;
 			box-sizing: content-box;
 			display: flex;
-			flex: row wrap;
+			flex-flow: row wrap;
 			justify-content: center; 
 			align-content: flex-start; //pozycjonuje divy
 			text-align: center; //wyrównuje text w divach
@@ -278,7 +278,8 @@ header {
 	}
 }
 .team-bg {
-	background: url("../img/bg-2.jpg") repeat-Y;
+	background: url("../img/bg-2.jpg") center center no-repeat;
+	background-size: cover;
 	text-align: center;
 	padding-top: 3.5rem;
 	
@@ -296,9 +297,10 @@ header {
 	}
 }
 .team-wrap {
-	flex-direction: row;
-	flex-wrap: wrap;
+
 	display: flex;
+	flex-flow: row wrap;
+
 	justify-content: center;
 }
 .cta {
@@ -456,7 +458,8 @@ header {
 		}
 	}
 	footer {
-		background: url("../img/bg-4.jpg") repeat-y center center local;
+		background: url("../img/bg-4.jpg") center center local;
+		background-size: cover;
 		color: $white;
 		display: flex;
 		flex-flow: row nowrap;
