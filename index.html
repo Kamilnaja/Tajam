@@ -151,13 +151,7 @@
 												<aside>
 													<h2>Our happy clients</h2>
 													<div class="clients">
-														<figure><p>Jeden</p></figure>
-														<figure><p>Dwa</p></figure>
-														<figure><p>Trzy</p></figure>
-														<figure><p>Cztery</p></figure>
-														<figure><p>Pięć</p></figure>
-														<figure><p>Sześć</figure>
-														<figure><p>Siedem</figure>
+												
 													</div>
 												</aside>
 												</div>
@@ -190,22 +184,7 @@
 													e.preventDefault();
 												});
 											}); 
-												//funkcja tworzy galerię divów 
-// window.onload=function(){
-// 	var output = document.getElementById('gallery');
-// 	var i = 1;
-// 	var val = "";
-// 	while (i <= 10){
-// 		if(!document.getElementById('timedrpact' + i)){
-// 			var ele = document.createElement("div");
-// 			ele.setAttribute("class", "image");
-// 			output.appendChild(ele)
-// 		}
-// 		i++;
-// 	}
-// }
 
-//pobranie danych z Json 
 function loadMore(){
 	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
       tags: "herbs",
@@ -226,12 +205,35 @@ function loadMore(){
    }   
  });
 });
-
+loadClients();
 }
 //po wciśnięciu przycisku ładuje się więcej fotek
 var element = document.getElementById('load-more');
 element.onclick = loadMore;
 
+
+function loadClients(){
+	$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
+      tags: "businessman",
+      tagmode: "all",
+      format: "json"
+}, function(data){
+  $.each(data.items, function(i,item){
+    var image = (item.media.m).replace("_m.jpg", "_d.jpg");
+    var title = item.title;
+   if(i < 8){
+     $("<figure>")
+      .attr({
+        "style":"background-image: url("+image+")", 
+        "class":"image",
+        "data-title":"title"
+      })
+     .appendTo(".clients").wrap("<a href='" + item.link + "' target=\"_blank\"></a>");
+   }   
+ });
+});
+
+}
 
 		</script>
 	</body>

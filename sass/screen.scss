@@ -49,6 +49,7 @@ header {
 				color: $bluegreen;
 				text-transform: lowercase;
 				margin: 10px 0 0 10px;
+				
 			}
 		}
 		/*----- Toggle Button -----*/
@@ -212,6 +213,8 @@ header {
 				position: relative;
 				top: 15px;
 				left: 20px;
+				cursor: pointer;
+				transition: 0.3s ease;
 				&:hover {
 					color: salmon;
 				}
@@ -434,12 +437,13 @@ header {
 	}
 	.clients figure {
 		color: $white;
-		background-color: cornflowerblue;
 		width: 200px;
 		height: 150px;
 		font-size: 2.0rem;
 		box-sizing: border-box;
 		margin: 10px;
+		border: 5px solid grey;
+		background-size: cover;
 		line-height: 150px;
 		text-align: center;
 		p {
@@ -460,15 +464,17 @@ header {
 			width: 30%;
 		}
 		article {
-			margin-top: 9.2rem;
-		#logo{ //logo strony tekstowe
-			position: relative;
-			bottom: 45px;
-			text-transform: none;
-			font: 3.0rem $roboto;
-			margin: 36px 0 60px 0;
-			color: $bluegreen;
-
+			margin-top: 90px;
+		
+			#logo{ //logo strony tekstowe
+				position: relative;
+				bottom: 45px;
+				text-transform: none;
+				font: 3.0rem $roboto;
+				text-decoration: none;
+				margin: 36px 0 0 0;
+				color: $bluegreen;
+			
 		}
 		.logo2 {
 			font: 1.5rem $roboto;
