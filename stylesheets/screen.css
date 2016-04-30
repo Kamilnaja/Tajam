@@ -52,38 +52,38 @@ table {
   border-spacing: 0;
 }
 
-/* line 9, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 p {
   font: 1.6rem "Roboto", sans-serif;
   line-height: 2.4rem;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 .header-wrapper {
   padding: 0 8%;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 h2 {
   font: bold 2.2rem "Playfair Display", serif;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 a {
   font-size: 1.5rem;
   color: #FFFFFF;
@@ -91,7 +91,7 @@ a {
   text-transform: uppercase;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 header {
   width: 100%;
   height: 76px;
@@ -100,12 +100,11 @@ header {
   z-index: 100;
   background-color: #322955;
 }
-/* line 41, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 header img {
   float: left;
   display: inline;
   margin: 10px 0 0 30px;
-  background-image: url("img/logo.png");
 }
 /* line 47, ../sass/screen.scss */
 header h1 {

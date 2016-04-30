@@ -6,6 +6,7 @@ $play: 'Playfair Display', serif;
 $grey: #413d4b;
 $white: #FFFFFF;
 $bluegreen: #2497A3;
+
 html {
 	box-sizing: border-box;
 }
@@ -42,7 +43,6 @@ header {
 				float: left;
 				display: inline;
 				margin: 10px 0 0 30px;
-				background-image: url("img/logo.png");
 			}
 			h1 {
 				font: bold 3.0rem $roboto;

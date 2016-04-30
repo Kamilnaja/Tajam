@@ -127,9 +127,27 @@
 										<p class="cta">Become part of our dream team, let's join us!</p>
 										<button class="btn"> Load more </button>
 									</div> 
+<script>
+	
+window.onload=function(){
+	var output = document.getElementById('gallery');
+	var i = 1;
+	var val = "";
+	while (i <= 10){
+		if(!document.getElementById('timedrpact' + i)){
+			var ele = document.createElement("div");
+			ele.setAttribute("class", "image");
+			output.appendChild(ele)
+		}
+		i++;
+	}
+}
+</script>
+
 									<div class="works" id="works">
 										<p>Our works</p>
-										<section class="gallery">
+										<section class="gallery" id="gallery">
+										<!-- 
 											<figure class="image"></figure>
 											<figure class="image2"></figure>
 											<figure class="image3"></figure>
@@ -139,10 +157,12 @@
 											<figure class="image"></figure>
 											<figure class="image2"></figure>
 											<figure class="image3"></figure>
-											<figure class="image"></figure>
+											<figure class="image"></figure> -->
 										</section>
 										<button class="btn"> Load more </button>
 									</div>
+
+
 									<article class="testimonials">
 										<div class="container">
 											<h2>About Our Company</h2>
