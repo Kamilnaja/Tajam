@@ -127,37 +127,12 @@
 										<p class="cta">Become part of our dream team, let's join us!</p>
 										<button class="btn"> Load more </button>
 									</div> 
-<script>
-	
-window.onload=function(){
-	var output = document.getElementById('gallery');
-	var i = 1;
-	var val = "";
-	while (i <= 10){
-		if(!document.getElementById('timedrpact' + i)){
-			var ele = document.createElement("div");
-			ele.setAttribute("class", "image");
-			output.appendChild(ele)
-		}
-		i++;
-	}
-}
-</script>
+
 
 									<div class="works" id="works">
 										<p>Our works</p>
 										<section class="gallery" id="gallery">
-										<!-- 
-											<figure class="image"></figure>
-											<figure class="image2"></figure>
-											<figure class="image3"></figure>
-											<figure class="image"></figure>
-											<figure class="image2"></figure>
-											<figure class="image3"></figure>
-											<figure class="image"></figure>
-											<figure class="image2"></figure>
-											<figure class="image3"></figure>
-											<figure class="image"></figure> -->
+						
 										</section>
 										<button class="btn"> Load more </button>
 									</div>
@@ -216,6 +191,42 @@ window.onload=function(){
 													e.preventDefault();
 												});
 											}); 
+												//funkcja tworzy galerię divów 
+// window.onload=function(){
+// 	var output = document.getElementById('gallery');
+// 	var i = 1;
+// 	var val = "";
+// 	while (i <= 10){
+// 		if(!document.getElementById('timedrpact' + i)){
+// 			var ele = document.createElement("div");
+// 			ele.setAttribute("class", "image");
+// 			output.appendChild(ele)
+// 		}
+// 		i++;
+// 	}
+// }
+
+//pobranie danych z Json 
+$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
+      tags: "herbs ",
+      tagmode: "all",
+      format: "json"
+}, function(data){
+  $.each(data.items, function(i,item){
+    var image = (item.media.m).replace("_m.jpg", "_d.jpg");
+    var title = item.title;
+   if(i < 10){
+     $("<div>")
+      .attr({
+        "style":"background-image: url("+image+")", 
+        "class":"image",
+        "data-title":"title"
+      })
+     .appendTo(".gallery").wrap("<a href='" + item.link + "' target=\"_blank\"></a>");
+   }   
+ });
+});
+
 										</script>
 									</body>
 									</html>

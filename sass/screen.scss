@@ -369,21 +369,11 @@ header {
 	.image {
 		width: 270px;
 		height: 200px;
-		background-color: salmon;
+		border: 10px solid grey;
 		margin: 5px;
 	}
-	.image2 {
-		background-color: lightblue;
-		width: 270px;
-		height: 200px;
-		margin: 5px;
-	}
-	}	.image3 {
-		background-color: green;
-		width: 270px;
-		height: 200px;
-		margin: 5px;
-	}
+
+	}	
 	.container {
 		.inputs {
 			flex-flow: row wrap;
