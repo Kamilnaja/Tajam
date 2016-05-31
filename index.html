@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
 	<title>My awesome website</title>
+	<link rel="stylesheet" href="stylesheets/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display|Roboto:400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<meta charset="utf-8">
+
 </head>
 <body>
 	<header>
 		<div class="header-wrapper">
-			<a href="#" class="page-logo"><img src="img/logo.png" alt="logo"><h1>tajam</h1></a>
+			<a href="#" class="page-logo"><img src="img/logo.png" alt="logo"><h1 class="page-title">tajam</h1></a>
 			<a href="#" class="toggle-nav">&#9776;</a>
 			<nav class="menu"> 
 				<ul class="active">
@@ -21,6 +23,7 @@
 					<li><a href="#works">Works</a></li>
 				</ul>
 			</nav>
+			
 		</div>
 	</header>
 	<main>
@@ -103,25 +106,25 @@
 												<div class="foto">
 												</div>
 												<h2>Kamil Naja</h2>
-												<h3>CEO & founder </h3>
+												<h3 class="ceo">CEO & founder </h3>
 											</article>
 											<article class="team-member">
 												<div class="foto">
 												</div>
 												<h2>Kamil Naja</h2>
-												<h3>CEO & founder </h3>
+												<h3 class="ceo">CEO & founder </h3>
 											</article>
 											<article class="team-member">
 												<div class="foto">
 												</div>
 												<h2>Kamil Naja</h2>
-												<h3>CEO & founder </h3>
+												<h3 class="ceo">CEO & founder </h3>
 											</article>
 											<article class="team-member">
 												<div class="foto">
 												</div>
 												<h2>Kamil Naja</h2>
-												<h3>CEO & founder </h3>
+											<h3 class="ceo">CEO & founder </h3>
 											</article>
 										</div>
 										<p class="cta">Become part of our dream team, let's join us!</p>
@@ -165,8 +168,8 @@
 											</article>
 										</div>
 										<footer>
-											<article>
-												<a href="#" class="logo"><img src="img/logo.png" alt="logo"><h2 id="logo">tajam</h2></a>
+											<article class="logohere">
+												<a href="#" class="logo"><img src="img/logo.png" alt="logo"><h2 class="logo">tajam</h2></a>
 												<p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis<br> sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
 											</article>
 											<article>
@@ -176,8 +179,8 @@
 												</article>
 												<article><h2 class="logo2">Stay in touch</h2>
 													<div class="form">
-														<input placeholder="Subscribe our newsletter" label="email"></input>
-														<button><img src="img/arrow.png" alt="arrow"/></button>
+														<input placeholder="Subscribe our newsletter" label="email" required  class="bottom-input"></input>
+														<button class="bottom-button"><img src="img/arrow.png" alt="arrow"/></button>
 													</div>
 												</article>
 											</footer>
@@ -191,22 +194,7 @@
 													e.preventDefault();
 												});
 											}); 
-												//funkcja tworzy galerię divów 
-// window.onload=function(){
-// 	var output = document.getElementById('gallery');
-// 	var i = 1;
-// 	var val = "";
-// 	while (i <= 10){
-// 		if(!document.getElementById('timedrpact' + i)){
-// 			var ele = document.createElement("div");
-// 			ele.setAttribute("class", "image");
-// 			output.appendChild(ele)
-// 		}
-// 		i++;
-// 	}
-// }
-
-//pobranie danych z Json 
+											
 $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", {
       tags: "herbs ",
       tagmode: "all",
